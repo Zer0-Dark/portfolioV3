@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from "react";
 import Block from "./components/Block";
 import cat from "./assets/pixel-cat.gif"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReact, faFigma, faSquareJs } from '@fortawesome/free-brands-svg-icons'
 
 function start() {
   let columnss = [];
@@ -64,6 +66,11 @@ function App() {
 
           <div className="w-1/2 flex justify-center relative ">
             <div className=" w-[406px] h-[320px] rounded-sm bg-thirdBgColor relative">
+              <FontAwesomeIcon className="absolute top-14 hover:text-secondryTextColor left-12 text-8xl text-mainBgColor z-30" icon={faSquareJs} />
+              <FontAwesomeIcon className="absolute top-14 hover:text-secondryTextColor left-40 text-8xl text-mainBgColor z-30" icon={faReact} />
+              <FontAwesomeIcon className="absolute top-14 hover:text-secondryTextColor left-2/3 text-8xl text-mainBgColor z-30" icon={faFigma} />
+
+
               <img className=" absolute bottom-0 left-12 w-2/3" src={cat} alt="jumping cat"></img>
             </div>
 
