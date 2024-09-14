@@ -4,6 +4,10 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import ProjectCard from "../components/ProjectCard";
 import website1 from "../assets/website1.png";
 import website2 from "../assets/website2.png";
+import vid1 from "../assets/smartHomeVid.mp4";
+import vid2 from "../assets/countruiesApi.mp4";
+import vid3 from "../assets/tenziesGame.mp4";
+import Transition from "../components/Transition";
 
 function Projects() {
     return (
@@ -20,14 +24,16 @@ function Projects() {
 
             <h1 className="w-full text-center text-8xl text-secondryTextColor mt-10">PROJECTS</h1>
             <div className="w-[100%] flex flex-row flex-wrap gap-8 justify-center mt-14 pb-12">
-                <ProjectCard img={website1} />
-                <ProjectCard img={website2} />
-                <ProjectCard img={website1} />
-                <ProjectCard img={website1} />
+                <ProjectCard img={website1} vid={vid1} title="SmartHome" />
+                <ProjectCard img={website2} vid={vid2} title="CounteriesApi" />
+                <ProjectCard img={website1} vid={vid3} title="TenziesGame" />
+                <ProjectCard img={website1} vid={vid2} title="" />
 
             </div>
         </div>
     )
 }
 
-export default Projects
+
+
+export default Projects;
