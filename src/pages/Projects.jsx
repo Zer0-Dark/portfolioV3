@@ -12,9 +12,9 @@ import Transition from "../components/Transition";
 function Projects() {
     return (
         <div className="min-w-screen min-h-screen bg-mainBgColor pt-5 pl-4">
-            <div className="hover:bg-thirdBgColor hover:text-secondryBgColor text-5xl text-mainTextColor p-4 pl-16 transition duration-300 w-2/5 ">
+            <div className="hover:bg-thirdBgColor hover:text-secondryBgColor text-5xl text-mainTextColor p-4 pl-16 transition duration-300 w-[35%] ">
 
-                <Link to="/" className=" w-full ">
+                <Link to="/" className=" w-full  cursor-pointer ">
                     <FontAwesomeIcon className="    " icon={faArrowLeft} />
                     <span className="ml-5">GoBack</span>
 

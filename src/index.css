@@ -5,6 +5,7 @@
 @import "tailwindcss/utilities";
 body {
   font-family: "Satoshi", sans-serif;
+  cursor: url("./assets/coolcursor.png"), auto;
 }
 ::selection {
   color: #6f4bff;

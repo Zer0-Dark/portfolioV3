@@ -39,8 +39,8 @@ function Home() {
             <div
 
                 className="  w-lvw h-lvh">
-                <div className=" w-full flex flex-col pt-14 justify-center items-center">
-                    <h1 className="text-[7rem] leading-none mb-2 text-mainTextColor">ABDULRAHMAN EHAB</h1>
+                <div className=" w-full flex flex-col pt-14 justify-center items-center cursor-cool">
+                    <h1 className="text-[7rem] leading-none mb-2 text-mainTextColor ">ABDULRAHMAN EHAB</h1>
                     <h2 className="text-6xl text-secondryTextColor">FRONTEND DEVELOPER</h2>
                     <h3 className="text-2xl text-secondryTextColor">WITH SOME UI/UX EXPERINCE</h3>
                 </div>
@@ -51,17 +51,17 @@ function Home() {
                     <div className="flex flex-col text-mainTextColor text-5xl w-1/2 translate-x-0  mb-8 ">
                         <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor p-4 pl-16 transition duration-300 w-3/4 ">
 
-                            <Link >Start Game</Link>
+                            <Link className=" cursor-pointer" >Start Game</Link>
                         </motion.div>
 
                         <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor p-4 pl-16 transition duration-300 w-3/4 ">
 
-                            <Link to="/projects" className=" w-full ">Projects</Link>
+                            <Link to="/projects" className="  cursor-pointer ">Projects</Link>
                         </motion.div>
 
                         <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor  hover:text-secondryBgColor text-mainTextColor p-4 pl-16 transition duration-300 w-3/4 " >
 
-                            <Link className="">Contact</Link>
+                            <Link className=" cursor-pointer">Contact</Link>
                         </motion.div>
 
                     </div>

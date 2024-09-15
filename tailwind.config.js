@@ -12,6 +12,10 @@ export default {
         'mainBgColor': '#141414',
         'secondryBgColor': '#000000',
         'thirdBgColor': '#AAAAAA',
+      },
+      cursor: {
+        'cool': 'url(/src/assets/coolcursor.png) , pointer',
+        'pointer': 'url(/src/assets/pointer.png) , pointer'
       }
     },
   },

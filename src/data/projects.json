@@ -1,0 +1,14 @@
+{
+    "projects": [
+        {
+            "title": "SmartHome",
+            "info": "a project etc",
+            "img": "./assets/website1.png",
+            "vid": "./assets/smartHomeVid.mp4",
+            "liveLink": "https://abdulrahman-ehab.github.io/SmartHome/",
+            "githubLink": "https://github.com/abdulrahman-ehab/SmartHome",
+            "figmaLink": "",
+            "techUsed": ""
+        }
+    ]
+}

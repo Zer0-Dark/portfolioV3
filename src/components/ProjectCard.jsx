@@ -13,7 +13,7 @@ function ProjectCard({ img, vid, title, paragraph, tech, liveLink, githubLink, f
                 onHoverStart={() => setHoverd(true)}
                 onHoverEnd={() => setHoverd(false)}
                 className=" h-1/2  inline-block relative cursor-pointer rounded-md overflow-hidden " onClick={() => setOpenMore(true)}>
-                <img className={`h-[487px] w-[640px] rounded-md ${hoverd ? "blur-sm" : "blur-0"}`} src={img}></img>
+                <img className={`h-[487px] w-[640px] transition duration-500 rounded-md ${hoverd ? "blur-sm" : "blur-0"}`} src={img}></img>
 
                 <AnimatePresence mode="wait">
                     {
