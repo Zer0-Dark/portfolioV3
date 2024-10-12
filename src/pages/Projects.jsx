@@ -4,9 +4,9 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import ProjectCard from "../components/ProjectCard";
 import website1 from "../assets/website1.png";
 import website2 from "../assets/website2.png";
-import vid1 from "../assets/smartHomeVid.mp4";
-import vid2 from "../assets/countruiesApi.mp4";
-import vid3 from "../assets/tenziesGame.mp4";
+import vid1 from "../assets/optomized/Adviceapi.mp4";
+import vid2 from "../assets/optomized/Calculator.mp4";
+import vid3 from "../assets/optomized/Calculator.mp4";
 import Transition from "../components/Transition";
 
 function Projects() {
@@ -22,7 +22,7 @@ function Projects() {
                 </Link>
             </div>
 
-            <h1 className="w-full text-center text-8xl text-secondryTextColor mt-10">PROJECTS</h1>
+            <h1 className="w-full text-center text-8xl text-secondryTextColor font-semibold mt-10">PROJECTS</h1>
             <div className="w-[100%] flex flex-row flex-wrap gap-8 justify-center mt-14 pb-12">
                 <ProjectCard img={website1} vid={vid1} title="SmartHome" />
                 <ProjectCard img={website2} vid={vid2} title="CounteriesApi" />

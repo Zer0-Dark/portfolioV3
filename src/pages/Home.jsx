@@ -61,7 +61,7 @@ function Home() {
 
                         <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor  hover:text-secondryBgColor text-mainTextColor p-4 pl-16 transition duration-300 w-3/4 " >
 
-                            <Link className=" cursor-pointer">Contact</Link>
+                            <Link to="/contact" className=" cursor-pointer">Contact</Link>
                         </motion.div>
 
                     </div>
