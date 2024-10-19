@@ -6,6 +6,7 @@
 body {
   font-family: "Satoshi", sans-serif;
   cursor: url("./assets/coolcursor.png"), auto;
+  background-color: #141414;
 }
 ::selection {
   color: #6f4bff;
@@ -23,6 +24,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  opacity: 0.8;
 }
 
 .block {
@@ -30,8 +32,7 @@ body {
   background-color: #141414;
   flex-grow: 1;
   height: full;
-  min-width: 100px;
-  height: 100px;
+
   border: 1px #505050 solid;
   transition: 0s;
 }
@@ -40,15 +41,6 @@ body {
   background-color: #000000;
   flex-grow: 1;
   height: full;
-  min-width: 100px;
-  height: 100px;
+ 
   border: 1px #505050 solid;
-}
-.block:hover {
-  background-color: white;
-  transition: 2s;
-}
-.block-active:hover {
-  background-color: white;
-  transition: 2s;
 }

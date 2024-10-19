@@ -17,7 +17,10 @@ export default {
         'cool': 'url(/src/assets/coolcursor.png) , pointer',
         'pointer': 'url(/src/assets/pointer.png) , pointer'
       }
-    },
+    }, screens: {
+      'desktop': '1024px',
+      'bigDesktop': '1600px'
+    }
   },
   plugins: [],
 }

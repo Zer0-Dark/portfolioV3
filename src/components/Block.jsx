@@ -1,17 +1,16 @@
 
 
 
-function Block({ on }) {
+function Block({ on, size }) {
 
 
     return (
-        <div
+        <div className={`${on ? 'block-active' : 'block'}`} style={{ width: `${size}px`, height: `${size}px` }}>
 
 
-
-            className={on ? "block-active" : "block"}>
 
         </div>
+
     )
 }
 
