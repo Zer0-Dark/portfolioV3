@@ -13,7 +13,7 @@ import CounteriesApi from "../assets/optomized/Countruiesapi.mp4"
 import CounteriesApiImg from "../assets/optomized/CountriesApi.png"
 
 import tenziesGameMockup from "../assets/optomized/tenziesGameMockup.png"
-import tenziesGameVideo from "../assets/optomized/TenziesGame.mp4"
+import tenziesGameVideo from "../assets/optomized/Tenziesgame.mp4"
 import tenziesGameImg from "../assets/optomized/TenziesGame.png"
 
 
@@ -22,9 +22,6 @@ import calculatorImg from "../assets/optomized/calculator.png"
 import calculatorVideo from "../assets/optomized/Calculator.mp4";
 
 
-import vid1 from "../assets/optomized/Adviceapi.mp4";
-import vid3 from "../assets/optomized/Calculator.mp4";
-import Transition from "../components/Transition";
 import MotionCat from "../components/MotionCat";
 
 function Projects() {
