@@ -2,8 +2,9 @@ import { useEffect } from "react";
 import walkingCat from "../assets/kubbi-chiptune.gif";
 import { motion } from 'framer-motion';
 import { useState } from "react";
+import deadCat from "../assets/dedCat.png";
 
-const MotionCat = () => {
+const MotionCat = ({ killedTheCat }) => {
     const [screenwidth, setScreenWidth] = useState(0);
 
 
@@ -43,9 +44,9 @@ const MotionCat = () => {
             animate={walkAnimation}
         >
             <motion.img
-                src={walkingCat} // Replace with the path to your cat image
+                src={killedTheCat ? deadCat : walkingCat} // Replace with the path to your cat image
                 alt="Walking Cat"
-                className="w-12"
+                className="h-12"
 
                 animate={jumpAnimation} // Apply jumping animation to the cat image
             />

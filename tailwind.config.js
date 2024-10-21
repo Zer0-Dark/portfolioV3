@@ -15,7 +15,9 @@ export default {
       },
       cursor: {
         'cool': 'url(/src/assets/coolcursor.png) , pointer',
-        'pointer': 'url(/src/assets/pointer.png) , pointer'
+        'pointer': 'url(/src/assets/pointer.png) , pointer',
+        'gun': 'url(/src/assets/gun1.png) , pointer',
+        'gunPointer': 'url(/src/assets/gun2.png),pointer'
       }
     }, screens: {
       'desktop': '1024px',

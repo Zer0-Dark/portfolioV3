@@ -24,7 +24,7 @@ import calculatorVideo from "../assets/optomized/Calculator.mp4";
 
 import MotionCat from "../components/MotionCat";
 
-function Projects() {
+function Projects({ killedTheCat }) {
     return (
         <div className="min-w-screen min-h-screen bg-mainBgColor p-5">
             <div className="hover:bg-thirdBgColor hover:text-secondryBgColor text-5xl text-mainTextColor p-4 pl-16 transition duration-300 w-[35%] ">
@@ -58,7 +58,7 @@ function Projects() {
 
             </div>
 
-            <MotionCat />
+            <MotionCat killedTheCat={killedTheCat} />
         </div>
     )
 }

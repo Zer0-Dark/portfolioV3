@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Block from "../components/Block";
 import Game from "../components/Game";
 import cat from "../assets/pixel-cat.gif"
+import deadCat from "../assets/dedCat.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { faReact, faFigma, faSquareJs } from '@fortawesome/free-brands-svg-icons'
@@ -17,10 +18,11 @@ function start() {
     return columnss
 }
 
-function Home() {
-
+function Home({ killedTheCat, killTheCatFun }) {
     let [colums, setColmus] = useState(start());
     let [showGame, setShowGame] = useState(false);
+
+
 
     function endGame() {
         setShowGame(false);
@@ -38,9 +40,9 @@ function Home() {
 
     return (
         <>
-            <AnimatePresence>
+            <AnimatePresence mode="sync">
                 {
-                    showGame && <Game endGame={endGame} />
+                    showGame && <Game endGame={endGame} killedTheCat={killTheCatFun} />
                 }
             </AnimatePresence>
 
@@ -49,7 +51,7 @@ function Home() {
                 {colums}
 
             </motion.div>
-            <motion.div initial={{ opacity: 0, scale: 0.6 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'keyframes', duration: 0.5 }} className="  w-lvw h-lvh">
+            <motion.div initial={{ opacity: 0, scale: 0.6 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'keyframes', duration: 0.5 }} className="  w-lvw h-lvh max-w-lvw max-h-lvh">
 
                 {/* tITLE START */}
                 <div className=" w-full flex flex-col desktop:pt-14 pt-24 justify-center items-center cursor-cool ">
@@ -88,8 +90,21 @@ function Home() {
                             <FontAwesomeIcon className=" hover:text-secondryTextColor left-40 text-8xl text-mainBgColor z-30" icon={faReact} />
                             <FontAwesomeIcon className=" hover:text-secondryTextColor left-2/3 text-8xl text-mainBgColor z-30" icon={faFigma} />
 
+                            {
+                                killedTheCat &&
 
-                            <img className=" absolute bottom-0 left-12 w-2/3" src={cat} alt="jumping cat"></img>
+                                <div>
+                                    <h2 className=" absolute bottom-24 left-0 w-full  text-center font-bold  text-2xl text-red-600 ">YOU KILLED THE CAT , MONSTER !</h2>
+                                    <img className=" absolute bottom-0 left-24 w-2/3" src={deadCat} alt="killed cat"></img>
+                                </div>
+
+                            }
+                            {!killedTheCat &&
+
+                                <img className=" absolute bottom-0 left-12 w-2/3" src={cat} alt="jumping cat"></img>
+
+
+                            }
                         </div>
 
                         <p className=" absolute -bottom-10 text-xl text-secondryTextColor ">@2024 Published by zer00dark</p>
