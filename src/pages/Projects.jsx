@@ -41,20 +41,20 @@ function Projects({ killedTheCat }) {
             <div className="w-[100%] flex flex-row flex-wrap gap-8 justify-center mt-14 pb-12">
 
                 {/* project one (smarhHome) */}
-                <ProjectCard img={smartHomeMokup} img2={smartHomeImg} vid={smartHomeVideo} title="SmartHome" paragraph="this project bla bla dsa aadsasaddas da as as das dadd sa das dasdas dsa da dsa dasd asd as das dsdd ddsadsadsa saddasds asaddsa" tech="html,css,typescript,React,TailWind,motion-framer" githubLink="https://github.com/Zer0-Dark/smartHome" liveLink="https://meek-muffin-d59c6b.netlify.app/" />
+                <ProjectCard projectTitle={"Templated Website with the figma design provided"} img={smartHomeMokup} img2={smartHomeImg} vid={smartHomeVideo} title="SmartHome" paragraph="This is a project made with React and tailwind css , it's a templated figma design that turned to a visual website with mobile version and with some animations on the hero page , and the animations are made with motion framer" tech="html,css,typescript,react,tailwind,motion-framer" githubLink="https://github.com/Zer0-Dark/smartHome" liveLink="https://meek-muffin-d59c6b.netlify.app/" />
 
                 {/* countriesAPi */}
-                <ProjectCard img={CounteriesApiMockup} img2={CounteriesApiImg} vid={CounteriesApi} title="CounteriesApi" paragraph="this is an api project" tech="html,css,react,react router"
+                <ProjectCard projectTitle={"frontEnd Mentor template with api integration"} img={CounteriesApiMockup} img2={CounteriesApiImg} vid={CounteriesApi} title="CounteriesApi" paragraph="this is an api challange project from frontend Mentor , the figma design provided , it has dark and light mode with a mobile version" tech="html,css,js,react,react-router,tailwind"
                     githubLink="https://github.com/Zer0-Dark/frontEndMentorrest-countries-api-with-color-theme" liveLink="https://front-end-mentorrest-countries-api-with-color-theme-kapo.vercel.app/"
                 />
 
                 {/* Tenzies Game */}
-                <ProjectCard img={tenziesGameMockup} img2={tenziesGameImg} vid={tenziesGameVideo} title="TenziesGame" paragraph="this is tenzies game"
+                <ProjectCard projectTitle={"Scrimba react course project"} img={tenziesGameMockup} img2={tenziesGameImg} vid={tenziesGameVideo} title="TenziesGame" paragraph="a game made with react as a tutorial from the scrimba react course"
                     tech="html , css ,js , react" githubLink="https://github.com/Zer0-Dark/Tenzies-game?tab=readme-ov-file" liveLink="https://tenzies-game-plum.vercel.app/"
                 />
 
                 {/* calculator app */}
-                <ProjectCard img={calculatorMockup} img2={calculatorImg} vid={calculatorVideo} title="CalculatorAPp" paragraph="this project bla bla dsa aadsasaddas da as as das dadd sa das dasdas dsa da dsa dasd asd as das dsdd ddsadsadsa saddasds asaddsa" tech="html,css,js" liveLink="https://abdulrahman-ehab.github.io/SmartHome/" />
+                <ProjectCard projectTitle={"this is a frontEnd Mentor challenge project made with vanilla js"} img={calculatorMockup} img2={calculatorImg} vid={calculatorVideo} title="CalculatorAPP" paragraph="this is a challenge project from frontend Mentor ,it's a simple calculator with dark and light mode, also the figma design was provided with the challenge" tech="html,css,js" liveLink="https://abdulrahman-ehab.github.io/SmartHome/" />
 
             </div>
 

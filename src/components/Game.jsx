@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faClose, faHeartBroken } from '@fortawesome/free-solid-svg-icons';
 import walkingCat from "../assets/kubbi-chiptune.gif";
+import catlevel1 from "../assets/level1Cat.gif"
 import deadCat from "../assets/dedCat.png";
 import { useState, useEffect } from "react";
 import GameTitle from "./GameTitle";
@@ -15,6 +16,9 @@ function Game({ endGame, killedTheCat }) {
     const [health, setHealth] = useState(4);  // Cat health state
     const [gameEnded, setGameEnded] = useState(false);  // Tracks if the game has ended
     const [shock, setShock] = useState(false);  // Tracks the shock animation state
+    const [cloneCat, setCloneCat] = useState(false);
+    const [cloneCat2, setCloneCat2] = useState(false);
+
 
 
     if (currentMessage === 6) {
@@ -37,11 +41,23 @@ function Game({ endGame, killedTheCat }) {
     // Handles cat click logic, reduces health and triggers shock animation
     function clickedTheCat() {
         setHealth((prev) => prev - 1);
+        if (health === 2) {
+            setCloneCat(true);
+            setCloneCat2(true);
+        }
         setShock(true);  // Trigger shock animation
         if (health === 1) {
             catDead();  // Call function when cat health reaches 0
         }
     }
+
+    function clickedTheClone() {
+        setCloneCat(false);
+    }
+    function clickedTheClone2() {
+        setCloneCat2(false);
+    }
+
 
 
 
@@ -103,25 +119,30 @@ function Game({ endGame, killedTheCat }) {
 
     // Variants for the cat's movement animation based on health level
     const level1 = {
-        x: [0, -600, 600, 0],
+        x: [0, 500, -500, 0],
         transition: {
-            duration: 5,
+            duration: 2,
             repeat: Infinity,
-            repeatType: "reverse"
+            times: [0, 0.25, 0.75, 1],
+            type: "tween"
+
         }
     };
+
     const level2 = {
-        x: [0, -800, 800, 0],
-        y: [0, -300, -600, 0],
+        x: [0, 500, -500, 0],
+        y: [0, -300, -300, 0],
         transition: {
-            duration: 4,
+            duration: 2,
             repeat: Infinity,
-            repeatType: "reverse"
+            times: [0, 0.4, 0.9, 1],
+            type: "tween"
+
         }
     };
     const level3 = {
-        x: [0, -850, 850, 0],
-        y: [0, -600, -0, -600, 0],
+        x: [0, -500, 500, 0],
+        y: [0, -500, -0, -500, 0],
         transition: {
             duration: 3,
             repeat: Infinity,
@@ -129,9 +150,10 @@ function Game({ endGame, killedTheCat }) {
         }
     };
     const level4 = {
-        x: [0, -0, 0, 0],
+        x: [0, -500, 500, 0],
+        y: [0, -500, -0, -500, 0],
         transition: {
-            duration: 2,
+            duration: 3,
             repeat: Infinity,
             repeatType: "reverse"
         }
@@ -149,6 +171,12 @@ function Game({ endGame, killedTheCat }) {
             }
         }
     };
+
+    const cloneCatVariants = {
+        level1: level1,
+        level2: level2
+
+    }
 
     const healthShockVariants = {
         normal: {},
@@ -233,17 +261,74 @@ function Game({ endGame, killedTheCat }) {
 
                                             {/* Walking/Dead Cat Animation */}
                                             {!gameEnded ? (
-                                                <motion.div
-                                                    initial={{ x: 0 }}
-                                                    animate={shock ? "shock" : "normal"}
-                                                    variants={shockVariants}
-                                                    className="cat w-fit h-fit absolute bottom-9 left-1/2 -translate-x-1/2">
-                                                    <img
-                                                        draggable="false"
-                                                        className="h-24 cursor-gunPointer"
-                                                        onClick={clickedTheCat}
-                                                        src={walkingCat} />
-                                                </motion.div>
+                                                <>
+                                                    <motion.div
+                                                        initial={{ x: 0 }}
+                                                        animate={shock ? "shock" : "normal"}
+                                                        variants={shockVariants}
+                                                        className="cat w-fit h-fit absolute bottom-9 left-1/2 -translate-x-1/2">
+                                                        <img
+                                                            draggable="false"
+                                                            className="h-24 cursor-gunPointer"
+                                                            onClick={clickedTheCat}
+                                                            src={catlevel1} />
+                                                    </motion.div>
+                                                    <AnimatePresence>
+
+                                                        {
+                                                            health === 4 &&
+                                                            <motion.div
+                                                                initial={{ opacity: 0, y: -30 }}
+                                                                animate={{ opacity: 1, y: 0 }}
+                                                                exit={{ opacity: 0, y: -30 }}
+                                                            >
+                                                                <h2 className="text-6xl font-bold mt-12 w-full text-center">SHOOT THE CAT</h2>
+                                                            </motion.div>
+                                                        }
+                                                        {
+                                                            health === 1 &&
+                                                            <motion.div
+                                                                initial={{ opacity: 0, y: -30 }}
+                                                                animate={{ opacity: 1, y: 0 }}
+                                                                exit={{ opacity: 0, y: -30 }}
+                                                            >
+                                                                <h2 className="text-6xl font-bold mt-12 w-full text-center">FIND THE REAL ONE</h2>
+                                                            </motion.div>
+                                                        }
+
+                                                        {
+                                                            cloneCat &&
+                                                            <motion.div
+                                                                initial={{ x: 0 }}
+                                                                animate={"level1"}
+                                                                exit={{ rotate: 360 }}
+                                                                variants={cloneCatVariants}
+                                                                className="cat w-fit h-fit absolute bottom-9 left-1/2 -translate-x-1/2">
+                                                                <img
+                                                                    draggable="false"
+                                                                    className="h-24 cursor-gunPointer"
+                                                                    onClick={clickedTheClone}
+                                                                    src={catlevel1} />
+                                                            </motion.div>
+
+                                                        }
+                                                        {
+                                                            cloneCat2 &&
+                                                            <motion.div
+                                                                initial={{ x: 0 }}
+                                                                animate={"level2"}
+                                                                variants={cloneCatVariants}
+                                                                className="cat w-fit h-fit absolute bottom-9 left-1/2 -translate-x-1/2">
+                                                                <img
+                                                                    draggable="false"
+                                                                    className="h-24 cursor-gunPointer"
+                                                                    onClick={clickedTheClone2}
+                                                                    src={catlevel1} />
+                                                            </motion.div>
+                                                        }
+                                                    </AnimatePresence>
+
+                                                </>
                                             ) : (
                                                 <div className="cat w-fit h-fit absolute bottom-9 left-1/2 -translate-x-1/2">
                                                     <img className="h-24" src={deadCat} />

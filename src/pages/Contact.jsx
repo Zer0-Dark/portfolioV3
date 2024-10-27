@@ -22,12 +22,12 @@ function Contact({ killedTheCat }) {
                 <h2 className="w-full text-center text-8xl text-secondryTextColor font-semibold mt-10">Contact</h2>
                 <div className="w-full mt-[5%] flex items-center justify-center gap-[12%] text-4xl text-thirdBgColor font-bold">
                     <motion.div initial={{ scale: 0.2 }} animate={{ scale: 1 }} whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="flex flex-col justify-center items-center gap-6 hover:cursor-pointer">
-                        <a><FontAwesomeIcon className="h-32 hover:text-secondryTextColor" icon={faGithub}></FontAwesomeIcon></a>
+                        <a href="https://github.com/Zer0-Dark"><FontAwesomeIcon className="h-32 hover:text-secondryTextColor" icon={faGithub}></FontAwesomeIcon></a>
                         <h2>Github</h2>
 
                     </motion.div>
                     <motion.div initial={{ scale: 0.2 }} animate={{ scale: 1 }} whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="flex flex-col justify-center items-center gap-4">
-                        <a href="https://www.linkedin.com/in/abdulrahman-ehab/"><FontAwesomeIcon className="h-32 hover:text-secondryTextColor" icon={faLinkedin} /></a>
+                        <a href="https://www.linkedin.com/in/abdulrahman-elbedawey-5b20aa194/"><FontAwesomeIcon className="h-32 hover:text-secondryTextColor" icon={faLinkedin} /></a>
                         <h2>Linkedin</h2>
                     </motion.div>
                     <motion.div initial={{ scale: 0.2 }} animate={{ scale: 1 }} whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="flex flex-col justify-center items-center gap-4">

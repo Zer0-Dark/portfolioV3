@@ -6,6 +6,7 @@ import Game from "../components/Game";
 import cat from "../assets/pixel-cat.gif"
 import deadCat from "../assets/dedCat.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import monster from "../assets/bloodyCat.png"
 
 import { faReact, faFigma, faSquareJs } from '@fortawesome/free-brands-svg-icons'
 
@@ -55,7 +56,7 @@ function Home({ killedTheCat, killTheCatFun }) {
 
                 {/* tITLE START */}
                 <div className=" w-full flex flex-col desktop:pt-14 pt-24 justify-center items-center cursor-cool ">
-                    <h1 className="desktop:text-[7rem] text-3xl leading-none mb-4 text-mainTextColor font-bold ">ABDULRAHMAN EHAB</h1>
+                    <h1 className="desktop:text-[6.2rem] bigDesktop:text-9xl  text-3xl leading-none mb-4 text-mainTextColor font-bold ">ABDULRAHMAN EHAB</h1>
                     <h2 className="desktop:text-6xl text-2xl text-secondryTextColor">FRONTEND DEVELOPER</h2>
                     <h3 className="desktop:text-2xl   text-secondryTextColor">WITH SOME UI/UX EXPERINCE</h3>
                 </div>
@@ -86,16 +87,19 @@ function Home({ killedTheCat, killTheCatFun }) {
                     {/* THE CAT RECTANGLE START */}
                     <div className="w-1/2 desktop:flex hidden justify-center relative  ">
                         <div className=" w-[406px] h-[320px] bigDesktop:w-[500px] bigDesktop:h-[420px] flex pt-[5%] justify-around rounded-sm bg-thirdBgColor relative border-2 border-black">
-                            <FontAwesomeIcon className=" hover:text-secondryTextColor left-12 text-8xl text-mainBgColor z-30" icon={faSquareJs} />
-                            <FontAwesomeIcon className=" hover:text-secondryTextColor left-40 text-8xl text-mainBgColor z-30" icon={faReact} />
-                            <FontAwesomeIcon className=" hover:text-secondryTextColor left-2/3 text-8xl text-mainBgColor z-30" icon={faFigma} />
+                            <div className="min-w-full flex justify-around ">
+                                <FontAwesomeIcon className=" hover:text-secondryTextColor  text-8xl text-mainBgColor z-30" icon={faSquareJs} />
+                                <FontAwesomeIcon className=" hover:text-secondryTextColor  text-8xl text-mainBgColor z-30" icon={faReact} />
+                                <FontAwesomeIcon className=" hover:text-secondryTextColor text-8xl text-mainBgColor z-30" icon={faFigma} />
+
+                            </div>
 
                             {
                                 killedTheCat &&
 
-                                <div>
-                                    <h2 className=" absolute bottom-24 left-0 w-full  text-center font-bold  text-2xl text-red-600 ">YOU KILLED THE CAT , MONSTER !</h2>
-                                    <img className=" absolute bottom-0 left-24 w-2/3" src={deadCat} alt="killed cat"></img>
+                                <div className="w-full">
+                             
+                                    <img className=" absolute bottom-0 -translate-x-1/2 left-1/2 w-2/3 " src={deadCat} alt="killed cat"></img>
                                 </div>
 
                             }

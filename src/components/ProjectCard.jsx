@@ -1,7 +1,7 @@
 
 import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome'
 import { faReact, faFigma, faSquareJs, faJs, faHtml5, faCss3 } from '@fortawesome/free-brands-svg-icons'
-import { faEye, faCode, faRectangleXmark } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faCode, faRectangleXmark, faFileCode } from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion";
 function ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubLink, figmaLink, projectTitle }) {
@@ -15,7 +15,7 @@ function ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubL
                 onHoverStart={() => setHoverd(true)}
                 onHoverEnd={() => setHoverd(false)}
                 className=" h-1/2  inline-block relative cursor-pointer rounded-md overflow-hidden " onClick={() => setOpenMore(true)}>
-                <img className={`h-[487px] w-[640px] transition duration-500 rounded-md ${hoverd ? "blur-sm" : "blur-0"}`} src={img}></img>
+                <img className={`h-[427px] w-[580px] transition duration-500 rounded-md ${hoverd ? "blur-sm" : "blur-0"}`} src={img}></img>
 
                 <AnimatePresence mode="wait">
                     {
@@ -29,10 +29,21 @@ function ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubL
 
                             <h1 className="text-5xl w-full  text-center  font-bold text-mainTextColor">{title}</h1>
                             <div className="  w-full flex justify-center gap-12 mt-4">
+                                {
+                                    tech.includes("js") &&
+                                    <FontAwesomeIcon className=" hover:text-secondryTextColor text-3xl text-mainTextColor " icon={faSquareJs} />
 
-                                <FontAwesomeIcon className=" hover:text-secondryTextColor text-3xl text-mainTextColor " icon={faSquareJs} />
-                                <FontAwesomeIcon className=" hover:text-secondryTextColor text-3xl text-mainTextColor " icon={faReact} />
-                                <FontAwesomeIcon className=" hover:text-secondryTextColor text-3xl text-mainTextColor " icon={faFigma} />
+                                }
+                                {
+                                    tech.includes("react") &&
+                                    <FontAwesomeIcon className=" hover:text-secondryTextColor text-3xl text-mainTextColor " icon={faReact} />
+
+                                }
+                                {
+                                    tech.includes("figma") &&
+                                    <FontAwesomeIcon className=" hover:text-secondryTextColor text-3xl text-mainTextColor " icon={faFigma} />
+
+                                }
                             </div>
                         </motion.div>
                     }
@@ -99,10 +110,74 @@ function ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubL
                                     <div className=''>
                                         <h2 className='text-2xl font-bold text-center'>TECNOLOGYS USED</h2>
                                         <div className='flex gap-6 mt-2 text-secondryTextColor justify-center text-5xl'>
-                                            <FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon>
-                                            <FontAwesomeIcon icon={faCss3}></FontAwesomeIcon>
-                                            <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
-                                            <FontAwesomeIcon icon={faJs}></FontAwesomeIcon>
+
+                                            {
+                                                tech.includes("html") &&
+                                                <div className='flex flex-col justify-center items-center'>
+                                                    <FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon>
+                                                    <p className='text-sm'>HTML</p>
+                                                </div>
+                                            }
+
+                                            {
+                                                tech.includes("css") &&
+                                                <div className='flex flex-col justify-center items-center'>
+                                                    <FontAwesomeIcon icon={faCss3}></FontAwesomeIcon>
+                                                    <p className='text-sm'>CSS</p>
+                                                </div>
+                                            }
+
+                                            {
+                                                tech.includes("js") &&
+                                                <div className='flex flex-col justify-center items-center'>
+                                                    <FontAwesomeIcon icon={faJs}></FontAwesomeIcon>
+                                                    <p className='text-sm'>JavaScript</p>
+                                                </div>
+                                            }
+                                            {
+                                                tech.includes("typescript") &&
+                                                <div className='flex flex-col justify-center items-center'>
+                                                    <FontAwesomeIcon icon={faFileCode}></FontAwesomeIcon>
+                                                    <p className='text-sm'>TypeScript</p>
+                                                </div>
+                                            }
+
+                                            {
+                                                tech.includes("react") &&
+                                                <div className='flex flex-col justify-center items-center'>
+                                                    <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
+                                                    <p className='text-sm'>React</p>
+                                                </div>
+                                            }
+
+                                            {
+                                                tech.includes("figma") &&
+                                                <div className='flex flex-col justify-center items-center'>
+                                                    <FontAwesomeIcon icon={faFigma}></FontAwesomeIcon>
+                                                    <p className='text-sm'>Figma</p>
+                                                </div>
+                                            }
+                                            {
+                                                tech.includes("tailwind") &&
+                                                <div className='flex flex-col justify-center items-center'>
+                                                    <FontAwesomeIcon icon={faFileCode}></FontAwesomeIcon>
+                                                    <p className='text-sm'>tailWind</p>
+                                                </div>
+                                            }
+                                            {
+                                                tech.includes("motion-framer") &&
+                                                <div className='flex flex-col justify-center items-center'>
+                                                    <FontAwesomeIcon icon={faFileCode}></FontAwesomeIcon>
+                                                    <p className='text-sm'>motion-framer</p>
+                                                </div>
+                                            }
+                                            {
+                                                tech.includes("react-router") &&
+                                                <div className='flex flex-col justify-center items-center'>
+                                                    <FontAwesomeIcon icon={faFileCode}></FontAwesomeIcon>
+                                                    <p className='text-sm'>react-router</p>
+                                                </div>
+                                            }
 
                                         </div>
                                     </div>
