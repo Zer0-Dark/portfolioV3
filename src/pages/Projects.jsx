@@ -31,22 +31,15 @@ import calculatorVideo from "../assets/optomized/Calculator.mp4";
 
 
 import MotionCat from "../components/MotionCat";
+import GoBackButton from "../components/GoBackButton";
 
 function Projects({ killedTheCat }) {
     return (
         <div className="min-w-screen min-h-screen bg-mainBgColor p-5">
-            <div className="hover:bg-thirdBgColor hover:text-secondryBgColor text-5xl text-mainTextColor p-4 pl-16 transition duration-300 w-[35%] ">
+            <GoBackButton />
 
-                <Link to="/" className=" w-full  cursor-pointer ">
-                    <FontAwesomeIcon className="    " icon={faArrowLeft} />
-                    <span className="ml-5">GoBack</span>
-
-
-                </Link>
-            </div>
-
-            <h1 className="w-full text-center text-8xl text-secondryTextColor font-semibold mt-10">PROJECTS</h1>
-            <div className="w-[100%] flex flex-row flex-wrap gap-8 justify-center mt-14 pb-12">
+            <h2 className="w-full text-center desktop:text-8xl text-6xl text-secondryTextColor font-semibold mt-10">PROJECTS</h2>
+            <div className="desktop:w-[100%]  flex flex-row flex-wrap gap-8 justify-center mt-14 pb-12">
 
 
                 {/* project zero elmo2ssa */}
