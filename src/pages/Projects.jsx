@@ -12,7 +12,7 @@ import smartHomeVideo from "../assets/optomized/Smarthomevid(1).mp4"
 import smartHomeImg from '../assets/optomized/SmartHome.png'
 
 import formMokup from "../assets/optomized/multistepformMokup.png";
-import formVideo from "../assets/optomized/multistepform.mp4";
+import formVideo from "../assets/optomized/Multistepform.mp4";
 import formImg from "../assets/optomized/multiStepFormImg.png"
 
 
