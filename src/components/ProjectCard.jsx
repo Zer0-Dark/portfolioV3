@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 
 import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome'
 import { faReact, faFigma, faSquareJs, faJs, faHtml5, faCss3 } from '@fortawesome/free-brands-svg-icons'
 import { faEye, faCode, faRectangleXmark, faFileCode } from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion";
-function ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubLink, figmaLink, projectTitle }) {
+function    ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubLink, figmaLink, projectTitle }) {
     const [openMore, setOpenMore] = useState(false);
     const [hoverd, setHoverd] = useState(false);
     return (
@@ -27,7 +28,7 @@ function ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubL
                             exit={{ y: 60, opacity: 0 }}
                         >
 
-                            <h1 className="text-5xl w-full  text-center  font-bold text-mainTextColor">{title}</h1>
+                            <h1 className="text-4xl w-full  text-center  font-bold text-mainTextColor">{title}</h1>
                             <div className="  w-full flex justify-center gap-12 mt-4">
                                 {
                                     tech.includes("js") &&
@@ -103,10 +104,10 @@ function ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubL
 
                                     <div className='text-center font-bold '>
                                         <h2 className='text-2xl  '>PROJECT TITLE</h2>
-                                        <p>{projectTitle}</p>
+                                        <p className='px-20'>{projectTitle}</p>
                                     </div>
 
-                                    <div className='w-full h-1 bg-white my-4'></div>
+                                    <div className='w-full h-1 bg-white my-2'></div>
                                     <div className=''>
                                         <h2 className='text-2xl font-bold text-center'>TECNOLOGYS USED</h2>
                                         <div className='flex gap-6 mt-2 text-secondryTextColor justify-center text-5xl'>
@@ -161,7 +162,7 @@ function ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubL
                                                 tech.includes("tailwind") &&
                                                 <div className='flex flex-col justify-center items-center'>
                                                     <FontAwesomeIcon icon={faFileCode}></FontAwesomeIcon>
-                                                    <p className='text-sm'>tailWind</p>
+                                                    <p className='text-sm'>Tailwind</p>
                                                 </div>
                                             }
                                             {
