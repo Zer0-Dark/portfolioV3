@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import ProjectCard from "../components/ProjectCard";
 
 import elmo2ssaMockup from "../assets/optomized/elmo2ssaMokup.png";
@@ -38,8 +35,8 @@ function Projects({ killedTheCat }) {
         <div className="min-w-screen min-h-screen bg-mainBgColor p-5">
             <GoBackButton />
 
-            <h2 className="w-full text-center desktop:text-8xl text-6xl text-secondryTextColor font-semibold mt-10">PROJECTS</h2>
-            <div className="desktop:w-[100%]  flex flex-row flex-wrap gap-8 justify-center mt-14 pb-12">
+            <h2 className="w-full text-center desktop:text-8xl text-6xl text-secondryTextColor font-semibold mt-10 mb-14 ">PROJECTS</h2>
+            <div className="desktop:w-[100%]  flex flex-row flex-wrap gap-8 justify-center pb-12">
 
 
                 {/* project zero elmo2ssa */}

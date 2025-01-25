@@ -4,6 +4,7 @@ import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
 import { useState } from "react";
 import { AnimatePresence } from 'framer-motion'
+import Exp from "../pages/Exp";
 function AnimatedRoutes() {
     let location = useLocation();
     const [killedTheCat, setKilledTheCat] = useState(false);
@@ -16,6 +17,7 @@ function AnimatedRoutes() {
                 <Route path="/" element={<Home killedTheCat={killedTheCat} killTheCatFun={killTheCat} />} />
                 <Route path="/projects" element={<Projects killedTheCat={killedTheCat} />} />
                 <Route path="/contact" element={<Contact killedTheCat={killedTheCat} />} />
+                <Route path="/expertise" element={<Exp killedTheCat={killedTheCat} />} />
             </Routes>
         </AnimatePresence>
     )

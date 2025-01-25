@@ -77,7 +77,7 @@ function ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubL
                         animate={{ scale: 1, x: "-50%", y: "-50%" }}
                         exit={{ scale: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="fixed flex desktop:p-6 p-2  flex-col items-center  z-10 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 desktop:w-[90%] h-full w-full desktop:h-[90%]  bg-thirdBgColor rounded-md ">
+                        className="fixed flex desktop:p-6 p-2  flex-col items-center  z-10 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 desktop:w-[90%] h-full w-full desktop:h-[90%] bg-mainTextColor rounded-md ">
                         <div className='absolute desktop:top-5 bottom-2 desktop:right-5 desktop:text-6xl text-5xl  cursor-pointer' onClick={() => setOpenMore(false)}>
                             <FontAwesomeIcon icon={faRectangleXmark}></FontAwesomeIcon>
                         </div>
@@ -90,7 +90,7 @@ function ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubL
                             <a href={githubLink} target='_blank' className='flex flex-col-reverse justify-center items-center cursor-pointer'> <h2 className='desktop:text-xl text-sm text-black font-bold'> Code</h2><FontAwesomeIcon icon={faCode} /></a>
 
                         </div>
-                        <img src={img2} className=' desktop:h-[50%] order-1 desktop:mt-0 max-h-[28%] desktop:max-h-full    mb-6' alt='test'></img>
+                        <img src={img2} className=' desktop:h-[50%] order-1 desktop:mt-0 max-h-[28%] desktop:max-h-full rounded-md mb-6' alt='test'></img>
 
                         <div className='w-full order-3'>
                             <h1 className='desktop:text-5xl text-2xl desktop:mt-0 my-2 text-center desktop:mb-6 text-secondryTextColor font-bold'>

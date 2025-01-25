@@ -11,7 +11,9 @@ export default {
         'secondryTextColor': '#6F4BFF',
         'mainBgColor': '#141414',
         'secondryBgColor': '#000000',
-        'thirdBgColor': '#AAAAAA',
+        'thirdBgColor': '#EFEFEF',
+        'ForuthBgColor': "#3f4043",
+        "linkColor":"#FFFF99"
       },
       cursor: {
         'cool': 'url(/src/assets/coolcursor.png) , pointer',

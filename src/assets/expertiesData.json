@@ -1,0 +1,21 @@
+[
+    {
+        "id": "1",
+        "name": "HTML    CSS  JS",
+        "paragraph": "I developed my proficiency in HTML, CSS, and JavaScript through Elzero Web School, where I successfully completed all the tasks and challenges associated with the course. I covered a wide range of topics including semantic HTML, CSS Flexbox, Grid layouts, Responsive Design, and advanced JavaScript concepts such as Object-Oriented Programming (OOP), JSON, AJAX, and Promises.",
+        "moreinfo": "View course challenges and tasks here",
+        "link": "https://github.com/Zer0-Dark/Elzero-JS-Course-Assignments"
+    },
+    {
+        "name": "React & Tailwind CSS",
+        "paragraph": "I acquired my knowledge of React and Tailwind CSS through various resources, including Scrimba, the official documentation, and freeCodeCamp. Additionally, I developed proficiency in essential libraries such as React Router for managing routing within React applications. Furthermore, I mastered Framer Motion to create animations and enhance the user interface in React. "
+    },
+    {
+        "name": "Algorithms and Data structure",
+        "paragraph": "I learned algorithms and data structures by studying books such as Grokking Algorithms and by solving logic problems on platforms like LeetCode and Codewars. ",
+        "moreinfo": "view leetCode profile link",
+        "link": "https://leetcode.com/u/zer00dark/",
+        "moreinfo1": "Or the problems on github",
+        "link1": "https://github.com/Zer0-Dark/LeetCode"
+    }
+]

@@ -83,6 +83,10 @@ function Home({ killedTheCat, killTheCatFun }) {
 
                         <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md " >
 
+                            <Link to="/Expertise" className=" cursor-pointer">Expertise</Link>
+                        </motion.div>
+                        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md " >
+
                             <Link to="/contact" className=" cursor-pointer">Contact</Link>
                         </motion.div>
 
