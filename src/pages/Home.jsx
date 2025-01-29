@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from "react";
@@ -65,7 +66,7 @@ function Home({ killedTheCat, killTheCatFun }) {
                 {/* MENU START */}
                 <div className="flex mt-6 pl-[8%] pr-[3%] desktop:pt-0 pt-12  ">
 
-                    <div className="flex flex-col   desktop:justify-normal desktop:items-start justify-center items-center text-mainTextColor bigDesktop:text-6xl desktop:text-5xl text-5xl desktop:w-1/2 w-full translate-x-0  mb-8 bigDesktop:gap-6 gap-6 desktop:gap-2 bigDesktop:ml-6   ">
+                    <div className="flex flex-col   desktop:justify-normal desktop:items-start justify-center items-center text-mainTextColor bigDesktop:text-6xl desktop:text-5xl text-5xl desktop:w-1/2 w-full translate-x-0  mb-8 bigDesktop:gap-6 gap-6 desktop:gap-2 bigDesktop:ml-6 font-medium   ">
                         <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor desktop:block hidden hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md">
 
                             <button className=" cursor-pointer" onClick={() => setShowGame(true)} >Start Game</button>
@@ -76,14 +77,14 @@ function Home({ killedTheCat, killTheCatFun }) {
 
                             <Link to="/contact" className=" cursor-pointer">Who Am I ?</Link>
                         </motion.div> */}
-                        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md ">
-
-                            <Link to="/projects" className="  cursor-pointer ">Projects</Link>
-                        </motion.div>
 
                         <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md " >
 
-                            <Link to="/Expertise" className=" cursor-pointer">Expertise</Link>
+                            <Link to="/Expertise" className=" cursor-pointer">My Bio</Link>
+                        </motion.div>
+                        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md ">
+
+                            <Link to="/projects" className="  cursor-pointer ">Projects</Link>
                         </motion.div>
                         <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md " >
 
@@ -95,8 +96,8 @@ function Home({ killedTheCat, killTheCatFun }) {
                     {/* MENU END */}
 
                     {/* THE CAT RECTANGLE START */}
-                    <div className="w-1/2 desktop:flex hidden justify-center relative  ">
-                        <div className=" w-[406px] h-[320px] bigDesktop:w-[500px] bigDesktop:h-[420px] flex pt-[5%] justify-around rounded-sm bg-thirdBgColor relative border-2 border-black">
+                    <div className="w-1/2 desktop:flex hidden justify-center relative   ">
+                        <div className=" w-[406px] h-[320px] bigDesktop:w-[500px] bigDesktop:h-[420px] flex pt-[5%] justify-around rounded-md bg-thirdBgColor relative border-2 border-black">
                             <div className="min-w-full flex justify-around ">
                                 <FontAwesomeIcon className=" hover:text-secondryTextColor  text-8xl text-mainBgColor z-30" icon={faSquareJs} />
                                 <FontAwesomeIcon className=" hover:text-secondryTextColor  text-8xl text-mainBgColor z-30" icon={faReact} />

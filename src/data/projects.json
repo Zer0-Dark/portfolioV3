@@ -1,14 +1,74 @@
-{
-    "projects": [
-        {
-            "title": "SmartHome",
-            "info": "a project etc",
-            "img": "./assets/website1.png",
-            "vid": "./assets/smartHomeVid.mp4",
-            "liveLink": "https://abdulrahman-ehab.github.io/SmartHome/",
-            "githubLink": "https://github.com/abdulrahman-ehab/SmartHome",
-            "figmaLink": "",
-            "techUsed": ""
-        }
-    ]
-}
+[
+    {
+        "id": "1",
+        "projectTitle": "A freelance job website i also made the figma design (you see it in the link above)",
+        "img": "https://i.postimg.cc/qqBFL7CK/elmo2ssa-Mokup.png",
+        "img2": "https://i.postimg.cc/7PV8TFT7/elmo2ssa-Img.png",
+        "vid": "https://res.cloudinary.com/dhkvjrrgk/video/upload/v1738113663/ktusrpocxktv4wcccapx.mp4",
+        "title": "Mahmoud darwish charity",
+        "paragraph": "This is a Freelancer job i made , i designed the UI at figma then the frontend side i used react , tailwind , motion framer and react router , also in the backend i used firebase to make the user able to change some of the ui elements using the dashboard",
+        "tech": "react,tailwind,firebase,react-router,motion-framer,figma",
+        "githubLink": "https://github.com/Zer0-Dark/elmo2ssa",
+        "liveLink": "https://mahmoud-fahmy-darwish.netlify.app/",
+        "figmaLink": "https://www.figma.com/design/CD1SDXE9hKnDocGDMYP9QT/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9-%D9%85%D8%AD%D9%85%D9%88%D8%AF-%D8%AF%D8%B1%D9%88%D9%8A%D8%B4?node-id=0-1&t=YXo87TqAxLZlXDZG-1"
+    },
+    {
+        "id": "2",
+        "projectTitle": "Templated Website with the figma design provided",
+        "img": "https://i.postimg.cc/mg7SPsPW/website1.png",
+        "img2": "https://i.postimg.cc/zBr6y7z0/Smart-Home.png",
+        "vid": "https://res.cloudinary.com/dhkvjrrgk/video/upload/v1738113791/Smarthomevid_1_tlinn4.mp4",
+        "title": "SmartHome",
+        "paragraph": "This is a project made with React and tailwind css , it's a templated figma design that turned to a visual website with mobile version and with some animations on the hero page , and the animations are made with motion framer",
+        "tech": "html,css,typescript,react,tailwind,motion-framer",
+        "githubLink": "https://github.com/Zer0-Dark/smartHome",
+        "liveLink": "https://meek-muffin-d59c6b.netlify.app/"
+    },
+    {
+        "id": "3",
+        "projectTitle": "A challenge in frontend mentor website",
+        "img": "https://i.postimg.cc/BZNkv2dB/multistepform-Mokup.png",
+        "img2": "https://i.postimg.cc/YCTJHkJc/multi-Step-Form-Img.png",
+        "vid": "https://res.cloudinary.com/dhkvjrrgk/video/upload/v1738113767/Multistepform_fcisoo.mp4",
+        "title": "Multistep form",
+        "paragraph": "This is a Multi step form challenge on frontend mentor that I solved , I did it using react , tailwind without using react router",
+        "tech": "react,tailwind",
+        "githubLink": "https://github.com/Zer0-Dark/multiStepForm-FrontendMentor",
+        "liveLink": "https://inspiring-naiad-9e3e3d.netlify.app/"
+    },
+    {
+        "id": "4",
+        "projectTitle": "FrontEnd Mentor template with API integration",
+        "img": "https://i.postimg.cc/YSkzgsFG/website2.png",
+        "img2": "https://i.postimg.cc/C5J3T8VJ/Countries-Api.png",
+        "vid": "https://res.cloudinary.com/dhkvjrrgk/video/upload/v1738113779/Countruiesapi_kderq0.mp4",
+        "title": "CounteriesApi",
+        "paragraph": "This is an API challenge project from frontend Mentor , the figma design provided , it has dark and light mode with a mobile version",
+        "tech": "html,css,js,react,react-router,tailwind",
+        "githubLink": "https://github.com/Zer0-Dark/frontEndMentorrest-countries-api-with-color-theme",
+        "liveLink": "https://front-end-mentorrest-countries-api-with-color-theme-kapo.vercel.app/"
+    },
+    {
+        "id": "5",
+        "projectTitle": "Scrimba React course project",
+        "img": "https://i.postimg.cc/QMLnzmTh/tenzies-Game-Mockup.png",
+        "img2": "https://i.postimg.cc/dt1XZLFP/Tenzies-Game.png",
+        "vid": "https://res.cloudinary.com/dhkvjrrgk/video/upload/v1738113771/Tenziesgame_ahf2wk.mp4",
+        "title": "TenziesGame",
+        "paragraph": "A game made with react as a tutorial from the Scrimba React course",
+        "tech": "html,css,js,react",
+        "githubLink": "https://github.com/Zer0-Dark/Tenzies-game?tab=readme-ov-file",
+        "liveLink": "https://tenzies-game-plum.vercel.app/"
+    },
+    {
+        "id": "6",
+        "projectTitle": "This is a FrontEnd Mentor challenge project made with vanilla JS",
+        "img": "https://i.postimg.cc/SNTBgcdx/calculator-Mokup.png",
+        "img2": "https://i.postimg.cc/RhvkDR2N/calculator.png",
+        "vid": "https://res.cloudinary.com/dhkvjrrgk/video/upload/v1738113762/Calculator_gplnkp.mp4",
+        "title": "CalculatorAPP",
+        "paragraph": "This is a challenge project from frontend Mentor, it's a simple calculator with dark and light mode, also the figma design was provided with the challenge",
+        "tech": "html,css,js",
+        "liveLink": "https://abdulrahman-ehab.github.io/SmartHome/"
+    }
+]

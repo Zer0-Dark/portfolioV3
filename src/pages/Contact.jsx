@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+/* eslint-disable react/prop-types */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faArrowLeft, faFile } from "@fortawesome/free-solid-svg-icons";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 
 import { motion } from "framer-motion";

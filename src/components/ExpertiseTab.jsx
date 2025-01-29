@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faA, faArrowDown, faWindowClose } from "@fortawesome/free-solid-svg-icons";
+import {  faArrowDown, faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 // import Magnet from './Magnet';
