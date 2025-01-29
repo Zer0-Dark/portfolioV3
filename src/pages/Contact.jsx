@@ -2,6 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from "@fortawesome/free-solid-svg-icons";
+import pdf from "../assets/Abdulrahman Ehab Elbedawey React-2025.pdf"
 
 
 import { motion } from "framer-motion";
@@ -24,7 +25,7 @@ function Contact({ killedTheCat }) {
                         <h2>Linkedin</h2>
                     </motion.div>
                     <motion.div initial={{ scale: 0.2 }} animate={{ scale: 1 }} whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="flex flex-col justify-center items-center gap-4">
-                        <a><FontAwesomeIcon className="desktop:h-32 h-12 hover:text-secondryTextColor" icon={faFile} /></a>
+                        <a href={pdf}><FontAwesomeIcon className="desktop:h-32 h-12 hover:text-secondryTextColor" icon={faFile} /></a>
                         <h2>CV</h2>
                     </motion.div>
 
