@@ -1,5 +1,17 @@
 [
     {
+        "id": "0",
+        "projectTitle": "My Portfolio V2",
+        "img": "https://i.postimg.cc/rytjBxqp/OIHEO71.png",
+        "img2": "https://i.postimg.cc/nh10dxpY/Fire-Shot-Capture-046-Portfolio-V2-portfolio-zer0-v2-netlify-app.png",
+        "vid": "https://res.cloudinary.com/dhkvjrrgk/video/upload/v1738115277/2025-01-29_03-45-19_1_olxbbf.mp4",
+        "title": "My Portfolio V2",
+        "paragraph": "A simple portolio that i made using react",
+        "tech": "react,tailwind,motion-framer,photoshop",
+        "githubLink": "https://github.com/Zer0-Dark/portfolioV2",
+        "liveLink": "https://portfolio-zer0-v2.netlify.app/"
+    },
+    {
         "id": "1",
         "projectTitle": "A freelance job website i also made the figma design (you see it in the link above)",
         "img": "https://i.postimg.cc/qqBFL7CK/elmo2ssa-Mokup.png",
