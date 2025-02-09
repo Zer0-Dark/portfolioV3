@@ -74,6 +74,18 @@
     },
     {
         "id": "6",
+        "projectTitle": "This is a Product Details page (Responsive) made with only vanilla JS ",
+        "img": "https://i.postimg.cc/wx0bX0TZ/product-page-mockup.png",
+        "img2": "https://i.postimg.cc/VvGGzLVm/product-page.png",
+        "vid": "https://res.cloudinary.com/dhkvjrrgk/video/upload/v1739133876/rhxyrgrotgvz7rbjdszp.mp4",
+        "title": "Product Page with Vanilla JS",
+        "paragraph": "This is a fully functional and interactive product details page built using only Vanilla JavaScript, HTML, and CSS. The page includes dynamic image previews./",
+        "tech": "html,css,js",
+        "githubLink": "https://github.com/Zer0-Dark/Ecommerce-product-page-project",
+        "liveLink": "https://product-page-zer00dark.netlify.app/"
+    },
+    {
+        "id": "7",
         "projectTitle": "This is a FrontEnd Mentor challenge project made with vanilla JS",
         "img": "https://i.postimg.cc/SNTBgcdx/calculator-Mokup.png",
         "img2": "https://i.postimg.cc/RhvkDR2N/calculator.png",
