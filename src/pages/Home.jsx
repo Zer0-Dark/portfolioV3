@@ -58,13 +58,13 @@ function Home({ killedTheCat, killTheCatFun }) {
                 {/* tITLE START */}
                 <div className=" w-full flex flex-col desktop:pt-14 pt-24 justify-center items-center cursor-cool ">
                     <h1 className="desktop:text-[6.2rem] bigDesktop:text-9xl  text-4xl text-center leading-none desktop:mb-4 mb-2 text-mainTextColor font-bold ">ABDULRAHMAN EHAB</h1>
-                    <h2 className="desktop:text-6xl text-2xl text-secondryTextColor ">FRONTEND DEVELOPER</h2>
-                    <h3 className="desktop:text-2xl text-xl   text-secondryTextColor">WITH UI/UX EXPERINCE</h3>
+                    <h2 className="desktop:text-6xl text-2xl text-secondryTextColor uppercase ">Full-stack Developer</h2>
+                    {/* <h3 className="desktop:text-2xl text-xl   text-secondryTextColor">WITH UI/UX EXPERINCE</h3> */}
                 </div>
                 {/* TITLE END */}
 
                 {/* MENU START */}
-                <div className="flex mt-6 pl-[8%] pr-[3%] desktop:pt-0 pt-12  ">
+                <div className="flex mt-20 pl-[8%] pr-[3%] desktop:pt-0 pt-12  ">
 
                     <div className="flex flex-col   desktop:justify-normal desktop:items-start justify-center items-center text-mainTextColor bigDesktop:text-6xl desktop:text-5xl text-5xl desktop:w-1/2 w-full translate-x-0  mb-8 bigDesktop:gap-6 gap-6 desktop:gap-2 bigDesktop:ml-6 font-medium   ">
                         <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor desktop:block hidden hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md">

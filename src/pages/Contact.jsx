@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from "@fortawesome/free-solid-svg-icons";
-import pdf from "../assets/Abdulrahman Ehab Elbedawey React-2025.pdf"
+import pdf from "../assets/Abdulrahman-ehab-12-2025.pdf"
 
 
 import { motion } from "framer-motion";
@@ -32,7 +32,7 @@ function Contact({ killedTheCat }) {
 
 
                 </div>
-                <h2 className="    mt-16 desktop:text-2xl text-xl text-thirdBgColor w-full text-center">Abdulrahman.elbedawey@gmail.com</h2>
+                <h2 className="mt-16 desktop:text-2xl text-xl text-thirdBgColor w-full text-center">Abdulrahman.elbedawey@gmail.com</h2>
 
                 {/* <WalkingFooterCat /> */}
             </div>
