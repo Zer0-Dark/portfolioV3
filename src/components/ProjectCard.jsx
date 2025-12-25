@@ -96,20 +96,20 @@ function ProjectCard({ img, img2, vid, title, paragraph, tech, liveLink, githubL
                             <h1 className='desktop:text-5xl text-2xl desktop:mt-0 my-2 text-center desktop:mb-6 text-secondryTextColor font-bold'>
                                 {title}
                             </h1>
-                            <div className='flex desktop:flex-row-reverse flex-col w-full  '>
-                                <div className='desktop:w-1/2 desktop:pl-8 flex flex-col items-center  text-center border-b-4 desktop:mb-0 desktop:pb-0 pb-2 mb-2  border-white desktop:border-0'>
+                            <div className='flex desktop:flex-row-reverse flex-col w-full max-h-full  '>
+                                <div className='desktop:w-1/2 desktop:pl-8   flex flex-col items-center  text-center border-b-4 desktop:mb-0 desktop:pb-0 pb-2 mb-2  border-white desktop:border-0'>
                                     <h2 className='desktop:text-3xl desktop:mb-2 text-xl font-bold'>PROJECT DESCRIPSTION</h2>
-                                    <p className=' font-bold'>{paragraph} </p>
+                                    <p className=' font-bold h-[60%] overflow-scroll'>{paragraph} </p>
                                 </div>
 
-                                <div className='desktop:w-1/2 desktop:mr-8 flex flex-col items-center  desktop:border-r-4 border-white'>
+                                <div className='desktop:w-1/2 desktop:mr-8 flex flex-col items-center   '>
 
                                     <div className='text-center font-bold '>
                                         <h2 className='desktop:text-2xl  '>PROJECT TITLE</h2>
                                         <p className='desktop:px-20'>{projectTitle}</p>
                                     </div>
 
-                                    <div className='w-full h-1 bg-white my-2'></div>
+                                    {/* <div className='w-full h-1 bg-white my-2'></div> */}
                                     <div className=''>
                                         <h2 className='desktop:text-2xl font-bold text-center'>TECNOLOGYS USED</h2>
                                         <div className='flex gap-6 mt-2 text-secondryTextColor justify-center desktop:text-5xl'>

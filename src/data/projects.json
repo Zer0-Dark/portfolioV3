@@ -1,6 +1,18 @@
 [
     {
         "id": "0",
+        "projectTitle": "Data analysis portfolio Template",
+        "img": "https://i.postimg.cc/Y0hVj8Bg/Macbook-Pro-Showcase-Scene-Free-psd-Mockup.jpg",
+        "img2": "https://i.postimg.cc/yxgQ7dFq/Layer-1.png",
+        "vid": "",
+        "title": "Data analysis portfolio Template",
+        "paragraph": "This project is an open-source portfolio template engineered to empower data analysts, business intelligence professionals, and data scientists in building their professional online presence. The template is built using modern web technologies including Next.js for server-side rendering and optimal performance, Tailwind CSS for responsive and maintainable styling, and Framer Motion for creating engaging, smooth animations that enhance user experience. The design philosophy prioritizes both aesthetics and functionality, featuring a clean, professional layout that effectively showcases analytics projects, Power BI dashboards, data visualizations, and technical achievements. Key features include a hero section for immediate impact, dedicated project showcase areas with support for multiple project types, skills and expertise highlighting, certification and achievement sections, contact information, and a fully responsive design that works seamlessly across all devices and screen sizes. The template is fully customizable, allowing users to personalize colors, fonts, content, and layout to match their brand identity. Additional tools used in the design and development process include Photoshop for visual design and Figma for prototyping and UI/UX refinement. This open-source project demonstrates expertise in frontend development, user experience design, and creating professional digital solutions. It serves as both a functional portfolio tool and a showcase of modern web development capabilities.",
+        "tech": "react,next,js,tailwind,motion-framer,photoshop,figma",
+        "githubLink": "https://github.com/Zer0-Dark/data-analysis-portfolio",
+        "liveLink": "https://dataanalysis-portfolio.netlify.app/"
+    },
+    {
+        "id": "10",
         "projectTitle": "My Portfolio V2",
         "img": "https://i.postimg.cc/rytjBxqp/OIHEO71.png",
         "img2": "https://i.postimg.cc/nh10dxpY/Fire-Shot-Capture-046-Portfolio-V2-portfolio-zer0-v2-netlify-app.png",
