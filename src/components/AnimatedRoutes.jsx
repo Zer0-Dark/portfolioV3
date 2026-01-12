@@ -7,7 +7,7 @@ import { AnimatePresence } from 'framer-motion'
 import Exp from "../pages/Exp";
 function AnimatedRoutes() {
     let location = useLocation();
-    const [killedTheCat, setKilledTheCat] = useState(false);
+    const [killedTheCat, setKilledTheCat] = useState(true);
     function killTheCat() {
         setKilledTheCat(true);
     }

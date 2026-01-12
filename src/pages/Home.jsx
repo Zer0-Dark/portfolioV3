@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 import Block from "../components/Block";
 import Game from "../components/Game";
 import cat from "../assets/pixel-cat.gif"
-import deadCat from "../assets/dedCat.png"
+import deadCat from "../assets/sadcat.png"
+import Footer from "../components/Footer"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -53,12 +54,12 @@ function Home({ killedTheCat, killTheCatFun }) {
                 {colums}
 
             </motion.div>
-            <motion.div initial={{ opacity: 0, scale: 0.6 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'keyframes', duration: 0.5 }} className="  w-lvw h-lvh max-w-lvw max-h-lvh">
+            <motion.div initial={{ opacity: 0, scale: 0.6 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'keyframes', duration: 0.5 }} className="  w-lvw h-lvh max-w-lvw max-h-lvh flex flex-col">
 
                 {/* tITLE START */}
                 <div className=" w-full flex flex-col desktop:pt-14 pt-24 justify-center items-center cursor-cool ">
                     <h1 className="desktop:text-[6.2rem] bigDesktop:text-9xl  text-4xl text-center leading-none desktop:mb-4 mb-2 text-mainTextColor font-bold ">ABDULRAHMAN EHAB</h1>
-                    <h2 className="desktop:text-6xl text-2xl text-secondryTextColor uppercase ">Full-stack Developer</h2>
+                    <h2 className="desktop:text-5xl text-xl text-secondryTextColor uppercase font-game ">Full-stack Developer</h2>
                     {/* <h3 className="desktop:text-2xl text-xl   text-secondryTextColor">WITH UI/UX EXPERINCE</h3> */}
                 </div>
                 {/* TITLE END */}
@@ -69,7 +70,7 @@ function Home({ killedTheCat, killTheCatFun }) {
                     <div className="flex flex-col   desktop:justify-normal desktop:items-start justify-center items-center text-mainTextColor bigDesktop:text-6xl desktop:text-5xl text-5xl desktop:w-1/2 w-full translate-x-0  mb-8 bigDesktop:gap-6 gap-6 desktop:gap-2 bigDesktop:ml-6 font-medium   ">
                         <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor desktop:block hidden hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md">
 
-                            <button className=" cursor-pointer" onClick={() => setShowGame(true)} >Start Game</button>
+                            <button className="  cursor-pointer" onClick={() => setShowGame(true)} >Start Game</button>
 
                         </motion.div>
 
@@ -122,7 +123,6 @@ function Home({ killedTheCat, killTheCatFun }) {
                             }
                         </div>
 
-                        <p className=" absolute -bottom-8 text-xl text-secondryTextColor ">@2024 Published by zer00dark</p>
 
                     </div>
                     {/* THE CAT RECTANGLE END */}
@@ -130,6 +130,9 @@ function Home({ killedTheCat, killTheCatFun }) {
 
                 </div>
 
+                <div className="w-full mt-auto">
+                    <Footer></Footer>
+                </div>
             </motion.div>
         </>
     )

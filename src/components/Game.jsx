@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faClose, faHeartBroken } from '@fortawesome/free-solid-svg-icons';
 import walkingCat from "../assets/kubbi-chiptune.gif";
 import catlevel1 from "../assets/level1Cat.gif"
-import deadCat from "../assets/dedCat.png";
+import deadCat from "../assets/sadcat.png";
 import { useState, useEffect } from "react";
 import GameTitle from "./GameTitle";
 
@@ -205,7 +205,7 @@ function Game({ endGame, killedTheCat }) {
             {
                 endMessage === 1 ? <GameTitle msg="YOU !" /> :
                     endMessage == 2 ? <GameTitle msg="YOU MONSTER !" /> :
-                        endMessage == 3 ? <GameTitle msg="YOU KILLED THE CAT  !!!!!!" /> : null
+                        endMessage == 3 ? <GameTitle msg="YOU HURT THE CAT  !!!!!!" /> : null
             }
 
             <AnimatePresence mode="popLayout">

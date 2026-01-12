@@ -8,12 +8,14 @@ import pdf from "../assets/Abdulrahman-ehab-12-2025.pdf"
 import { motion } from "framer-motion";
 import MotionCat from "../components/MotionCat";
 import GoBackButton from "../components/GoBackButton";
+import PageTitle from "../components/PageTitle";
+import Footer from "../components/Footer";
 function Contact({ killedTheCat }) {
     return (
         <>
             <div className=" bg-mainBgColor min-h-screen min-w-screen p-6 relative">
                 <GoBackButton />
-                <h2 className="w-full text-center desktop:text-8xl  text-6xl text-secondryTextColor font-semibold mt-10">Contact</h2>
+                <PageTitle title="Contact" />
                 <div className="w-full desktop:mt-[5%] mt-[15%] flex items-center justify-center gap-[12%] desktop:text-4xl text-xl text-thirdBgColor font-bold">
                     <motion.div initial={{ scale: 0.2 }} animate={{ scale: 1 }} whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="flex flex-col justify-center items-center gap-6 hover:cursor-pointer">
                         <a href="https://github.com/Zer0-Dark"><FontAwesomeIcon className="desktop:h-32 h-12 hover:text-secondryTextColor" icon={faGithub}></FontAwesomeIcon></a>

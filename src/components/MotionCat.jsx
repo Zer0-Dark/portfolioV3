@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import walkingCat from "../assets/kubbi-chiptune.gif";
 import { motion } from 'framer-motion';
 import { useState } from "react";
-import deadCat from "../assets/dedCat.png";
+import deadCat from "../assets/sadcat.png";
 
 const MotionCat = ({ killedTheCat }) => {
     const [screenwidth, setScreenWidth] = useState(0);

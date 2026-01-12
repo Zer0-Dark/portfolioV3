@@ -1,0 +1,118 @@
+{
+    "profile": {
+        "image": "https://i.postimg.cc/G2DxZgHD/9090495e85a86b1866cf97ff52ccc5ec.jpg",
+        "level": "9999",
+        "title": "Full-Stack Developer",
+        "location": "Alexandria, Egypt"
+    },
+    "about": {
+        "description": "I am Abdulrahman E. Elbedawey, a versatile and detail-oriented Full-Stack Developer based in Alexandria, Egypt. I specialize in designing, building, and optimizing web applications from front-end to back-end.",
+        "additionalInfo": "My expertise lies in React, Next.js, Tailwind CSS, and Framer Motion for creating seamless user interfaces, as well as Node.js, PHP, Electron, and SQL for robust server-side logic and data management. I'm experienced in automating workflows, integrating APIs, and delivering scalable, high-performance solutions. Quick to learn new technologies and adept at collaborating with cross-functional teams to drive impactful, user-centric products."
+    },
+    "experiences": [
+        {
+            "id": "1",
+            "title": "Freelance Full-Stack Developer",
+            "company": "Global Clients • Remote",
+            "description": "Developed enterprise-grade solutions including a Multi-Language News & Social Intelligence Platform with NLP.js for Arabic categorization, an Enterprise Request Management System handling 1M+ records with sub-100ms response times, and a Custom Power BI Geospatial Visual achieving 40% performance improvement over standard visuals.",
+            "status": "CURRENT ROLE",
+            "statusColor": "green",
+            "stack": [
+                "Node.js",
+                "React",
+                "Electron",
+                "MongoDB",
+                "SQLite",
+                "TypeScript",
+                "D3.js",
+                "Power BI Visuals",
+                "Telegram Bots",
+                "Telegram MiniApps"
+            ],
+            "iconColor": "green"
+        },
+        {
+            "id": "2",
+            "title": "Web Developer (Part-time)",
+            "company": "Mahmoud Darwish Organization • Remote",
+            "description": "Revamped the organization's website with a modern, fully responsive UI using React and Firebase. Strategically minimized Firebase API requests to maintain performance while leveraging free Netlify hosting to eliminate monthly costs.",
+            "status": "COMPLETED",
+            "statusColor": "yellow",
+            "stack": [
+                "React",
+                "Firebase",
+                "Tailwind CSS",
+                "Figma"
+            ],
+            "iconColor": "secondryTextColor"
+        },
+        {
+            "id": "3",
+            "title": "Web Development Intern",
+            "company": "Information Technology Institute (ITI) • Alexandria",
+            "description": "Completed intensive training program focused on Web Development using Content Management Systems (CMS). Gained hands-on experience with modern web development practices and tools.",
+            "status": "COMPLETED",
+            "statusColor": "yellow",
+            "stack": [
+                "WordPress",
+                "PHP",
+                "CMS"
+            ],
+            "iconColor": "secondryTextColor"
+        }
+    ],
+    "techStack": [
+        {
+            "id": "1",
+            "name": "React Ecosystem",
+            "category": "Frontend",
+            "description": "Advanced component architecture with React.js, Next.js, Redux, and React Router. Specialized in Virtual DOM manipulation, state management patterns, and modern hooks.",
+            "icon": "faReact",
+            "tags": [
+                "React",
+                "Next.js",
+                "Redux",
+                "Hooks",
+                "Tailwind"
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Node.js & Express",
+            "category": "Backend",
+            "description": "Server-side JavaScript execution with Node.js and Express.js. Capable of handling high-throughput asynchronous operations, REST API development, and microservices architecture.",
+            "icon": "faNode",
+            "tags": [
+                "Node.js",
+                "Express",
+                "REST API",
+                "Electron"
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Database Management",
+            "category": "DB",
+            "description": "Robust data storage solutions with SQL (SQLite, SQL Server) and MongoDB. Proficient in designing schemas, optimizing complex queries, and achieving sub-100ms response times.",
+            "icon": "faDatabase",
+            "tags": [
+                "SQLite",
+                "SQL Server",
+                "MongoDB",
+                "Mongoose"
+            ]
+        },
+        {
+            "id": "4",
+            "name": "UI/UX Design",
+            "category": "Design",
+            "description": "Creating intuitive and visually appealing user interfaces with Figma, Photoshop, Tailwind CSS, and Framer Motion. Focus on responsive design and seamless user experiences.",
+            "icon": "faFigma",
+            "tags": [
+                "Figma",
+                "Photoshop",
+                "Framer Motion"
+            ]
+        }
+    ]
+}

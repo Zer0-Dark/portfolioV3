@@ -4,7 +4,9 @@ import ProjectCard from "../components/ProjectCard";
 
 import MotionCat from "../components/MotionCat";
 import GoBackButton from "../components/GoBackButton";
+import PageTitle from "../components/PageTitle";
 import projectsData from "../data/projects.json"
+import Footer from "../components/Footer";
 
 
 function Projects({ killedTheCat }) {
@@ -14,14 +16,15 @@ function Projects({ killedTheCat }) {
         <div className="min-w-screen min-h-screen bg-mainBgColor p-5">
             <GoBackButton />
 
-            <h2 className="w-full text-center desktop:text-8xl text-6xl text-secondryTextColor font-semibold mt-10 mb-14 ">PROJECTS</h2>
+            <PageTitle title="PROJECTS" />
             <div className="desktop:w-[100%]  flex flex-row flex-wrap gap-8 justify-center pb-12">
 
 
                 {projectsList}
             </div>
-
+            {/* <Footer></Footer> */}
             <MotionCat killedTheCat={killedTheCat} />
+
         </div>
     )
 }
