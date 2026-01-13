@@ -79,7 +79,7 @@ function Contact({ killedTheCat }) {
                             download={link.download}
                             target={!link.download ? "_blank" : undefined}
                             rel={!link.download ? "noopener noreferrer" : undefined}
-                            className="group flex items-center p-6 rounded-2xl bg-mainBgColor backdrop-blur-md border border-secondryTextColor/20 hover:border-secondryTextColor transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(111,75,255,0.2)]"
+                            className="group flex items-center p-6 rounded-2xl bg-mainBgColor backdrop-blur-md border border-secondryTextColor/20 hover:border-secondryTextColor transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(111,75,255,0.2)] cursor-pointer"
                         >
                             <div className="w-10 h-10 rounded-lg bg-zinc-900/50 flex items-center justify-center text-gray-400 group-hover:text-secondryTextColor transition-colors">
                                 <FontAwesomeIcon icon={link.icon} className="text-2xl" />
@@ -111,7 +111,7 @@ function Contact({ killedTheCat }) {
                         </div>
                         <button
                             onClick={copyEmail}
-                            className="bg-secondryTextColor hover:bg-secondryTextColor/90 text-white px-8 py-3 rounded-xl font-bold text-sm transition-all duration-200 flex items-center gap-2 active:scale-95 shadow-lg"
+                            className="bg-secondryTextColor hover:bg-secondryTextColor/90 text-white px-8 py-3 rounded-xl font-bold text-sm transition-all duration-200 flex items-center gap-2 active:scale-95 shadow-lg cursor-pointer"
                         >
                             <span>{copied ? 'Copied!' : 'Copy'}</span>
                             <FontAwesomeIcon icon={faCopy} className="text-sm" />

@@ -213,7 +213,7 @@ function Game({ endGame, killedTheCat }) {
 
                 {
                     // Start game messages (countdown)
-                    currentMessage === 0 ? <GameTitle msg="KILL THE CAT" /> :
+                    currentMessage === 0 ? <GameTitle msg="SHOOT THE CAT" /> :
                         currentMessage === 1 ? <GameTitle msg="3" /> :
                             currentMessage === 2 ? <GameTitle msg="2" /> :
                                 currentMessage === 3 ? <GameTitle msg="1" /> :

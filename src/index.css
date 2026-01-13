@@ -3,6 +3,12 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Satoshi", sans-serif;
   cursor: url("./assets/coolcursor.png"), auto;

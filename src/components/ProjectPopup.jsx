@@ -38,7 +38,7 @@ const ProjectPopup = ({ isOpen, onClose, title, projectTitle, paragraph, vid, te
                         {/* Mobile Close Button */}
                         <button
                             onClick={onClose}
-                            className="absolute top-4 right-4 z-20 desktop:hidden bg-zinc-900 text-white p-2 rounded-full hover:bg-zinc-800 transition border border-zinc-700"
+                            className="absolute top-4 right-4 z-20 desktop:hidden bg-zinc-900 text-white p-2 rounded-full hover:bg-zinc-800 transition border border-zinc-700 cursor-pointer"
                         >
                             <FontAwesomeIcon icon={faTimes} />
                         </button>
@@ -91,7 +91,7 @@ const ProjectPopup = ({ isOpen, onClose, title, projectTitle, paragraph, vid, te
                         <div className="w-full desktop:w-5/12 p-6 desktop:p-8 flex flex-col relative bg-mainBgColor">
                             <button
                                 onClick={onClose}
-                                className="hidden desktop:block absolute top-6 right-6 text-gray-400 hover:text-white bg-zinc-800 hover:bg-zinc-700 rounded-full p-2 transition"
+                                className="hidden desktop:block absolute top-6 right-6 text-gray-400 hover:text-white bg-zinc-800 hover:bg-zinc-700 rounded-full p-2 transition cursor-pointer"
                             >
                                 <FontAwesomeIcon icon={faTimes} className="text-lg w-5 h-5 flex items-center justify-center" />
                             </button>
@@ -114,19 +114,19 @@ const ProjectPopup = ({ isOpen, onClose, title, projectTitle, paragraph, vid, te
                                     <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-500">Actions</h3>
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         {liveLink && (
-                                            <a href={liveLink} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 py-3 px-6 bg-secondryTextColor text-white rounded-full font-bold text-sm hover:bg-purple-600 transition shadow-[0_0_15px_rgba(111,75,255,0.4)] hover:shadow-[0_0_25px_rgba(111,75,255,0.6)] transform hover:-translate-y-0.5">
+                                            <a href={liveLink} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 py-3 px-6 bg-secondryTextColor text-white rounded-full font-bold text-sm hover:bg-purple-600 transition shadow-[0_0_15px_rgba(111,75,255,0.4)] hover:shadow-[0_0_25px_rgba(111,75,255,0.6)] transform hover:-translate-y-0.5 cursor-pointer">
                                                 <FontAwesomeIcon icon={faEye} />
                                                 <span>Live View</span>
                                             </a>
                                         )}
                                         {githubLink && (
-                                            <a href={githubLink} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 py-3 px-6 bg-transparent border-2 border-secondryTextColor text-secondryTextColor rounded-full font-bold text-sm hover:bg-secondryTextColor/10 transition shadow-[0_0_10px_rgba(111,75,255,0.2)] hover:shadow-[0_0_15px_rgba(111,75,255,0.4)] transform hover:-translate-y-0.5">
+                                            <a href={githubLink} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 py-3 px-6 bg-transparent border-2 border-secondryTextColor text-secondryTextColor rounded-full font-bold text-sm hover:bg-secondryTextColor/10 transition shadow-[0_0_10px_rgba(111,75,255,0.2)] hover:shadow-[0_0_15px_rgba(111,75,255,0.4)] transform hover:-translate-y-0.5 cursor-pointer">
                                                 <FontAwesomeIcon icon={faCode} />
                                                 <span>Source Code</span>
                                             </a>
                                         )}
                                         {figmaLink && (
-                                            <a href={figmaLink} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 py-3 px-6 bg-transparent border-2 border-pink-500 text-pink-500 rounded-full font-bold text-sm hover:bg-pink-500/10 transition transform hover:-translate-y-0.5">
+                                            <a href={figmaLink} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 py-3 px-6 bg-transparent border-2 border-pink-500 text-pink-500 rounded-full font-bold text-sm hover:bg-pink-500/10 transition transform hover:-translate-y-0.5 cursor-pointer">
                                                 <FontAwesomeIcon icon={faFigma} />
                                                 <span>Figma</span>
                                             </a>

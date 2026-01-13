@@ -31,7 +31,7 @@ function Exp({ killedTheCat }) {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="min-w-screen min-h-screen bg-mainBgColor pt-5 relative"
+            className="min-w-screen min-h-screen bg-mainBgColor pt-5 relative overflow-x-hidden"
         >
             {/* Background Effects */}
             <div className="fixed inset-0 pointer-events-none z-0">

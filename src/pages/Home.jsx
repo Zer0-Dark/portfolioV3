@@ -47,6 +47,7 @@ function Home({ killedTheCat, killTheCatFun }) {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="overflow-x-hidden"
         >
             <AnimatePresence mode="sync">
                 {

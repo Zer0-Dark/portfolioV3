@@ -16,10 +16,10 @@ export default {
         "linkColor": "#FFFF99"
       },
       cursor: {
-        'cool': 'url(/src/assets/coolcursor.png) , pointer',
-        'pointer': 'url(/src/assets/pointer.png) , pointer',
-        'gun': 'url(/src/assets/gun1.png) , pointer',
-        'gunPointer': 'url(/src/assets/gun2.png),pointer'
+        'cool': 'url(/src/assets/coolcursor.png), pointer',
+        'pointer': 'url(/src/assets/pointer.png), pointer',
+        'gun': 'url(/src/assets/gun1.png), pointer',
+        'gunPointer': 'url(/src/assets/gun2.png), pointer'
       }
       ,
       fontFamily: {
