@@ -13,7 +13,7 @@ function Projects({ killedTheCat }) {
 
     let projectsList = projectsData.map((project) => <ProjectCard key={project.id} projectTitle={project.projectTitle} img={project.img} img2={project.img2} vid={project.vid} title={project.title} paragraph={project.paragraph} tech={project.tech} githubLink={project.githubLink} liveLink={project.liveLink} figmaLink={project.figmaLink} />)
     return (
-        <div className="min-w-screen min-h-screen bg-mainBgColor p-5">
+        <div className="min-w-screen min-h-screen bg-mainBgColor pt-5">
             <GoBackButton />
 
             <PageTitle title="PROJECTS" />
@@ -22,7 +22,7 @@ function Projects({ killedTheCat }) {
 
                 {projectsList}
             </div>
-            {/* <Footer></Footer> */}
+            <Footer />
             <MotionCat killedTheCat={killedTheCat} />
 
         </div>

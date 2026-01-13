@@ -7,6 +7,7 @@ import AboutSection from "../components/AboutSection";
 import SectionHeader from "../components/SectionHeader";
 import ExperienceCard from "../components/ExperienceCard";
 import TechStackCard from "../components/TechStackCard";
+import BookCard from "../components/BookCard";
 import { faReact, faNode, faFigma } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import Footer from "../components/Footer";
@@ -21,10 +22,10 @@ const iconMap = {
 };
 
 function Exp({ killedTheCat }) {
-    const { profile, about, experiences, techStack } = profileData;
+    const { profile, about, experiences, techStack, books } = profileData;
 
     return (
-        <div className="min-w-screen min-h-screen bg-mainBgColor p-5">
+        <div className="min-w-screen min-h-screen bg-mainBgColor pt-5">
             <GoBackButton />
 
             {/* Page Title with ID Badge */}
@@ -108,9 +109,29 @@ function Exp({ killedTheCat }) {
                 </div>
             </section>
 
+            {/* Knowledge Base Section */}
+            <section className="pb-20 max-w-6xl mx-auto">
+                <SectionHeader
+                    title="Knowledge"
+                    highlight="Base (Books)"
+                    badge="LIBRARY"
+                />
+                <div className="grid grid-cols-1 desktop:grid-cols-3 gap-8">
+                    {books.map((book) => (
+                        <BookCard
+                            key={book.id}
+                            title={book.title}
+                            author={book.author}
+                            icon={book.icon}
+                            status={book.status}
+                            statusColor={book.statusColor}
+                        />
+                    ))}
+                </div>
+            </section>
 
             <MotionCat killedTheCat={killedTheCat} />
-            {/* <Footer></Footer> */}
+            <Footer />
         </div>
     )
 }

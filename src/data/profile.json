@@ -114,5 +114,55 @@
                 "Framer Motion"
             ]
         }
+    ],
+    "books": [
+        {
+            "id": "1",
+            "title": "Grokking Algorithms",
+            "author": "Aditya Bhargava",
+            "icon": "faBook",
+            "status": "Archived/Read",
+            "statusColor": "gray"
+        },
+        {
+            "id": "2",
+            "title": "Mastering JavaScript Functional Programming",
+            "author": "Federico Kereki",
+            "icon": "faBook",
+            "status": "Archived/Read",
+            "statusColor": "gray"
+        },
+        {
+            "id": "3",
+            "title": "Algorithms Unplugged",
+            "author": "Berthold Vöcking et al.",
+            "icon": "faGem",
+            "status": "Currently Studying",
+            "statusColor": "green"
+        },
+        {
+            "id": "4",
+            "title": "Multithreaded JavaScript",
+            "author": "Thomas Hunter II & Bryan English",
+            "icon": "faArrowsRotate",
+            "status": "Currently Studying",
+            "statusColor": "green"
+        },
+        {
+            "id": "5",
+            "title": "Designing Data-Intensive Applications",
+            "author": "Martin Kleppmann",
+            "icon": "faGem",
+            "status": "Currently Studying",
+            "statusColor": "green"
+        },
+        {
+            "id": "6",
+            "title": "Head First Design Patterns",
+            "author": "Eric Freeman & Elisabeth Robson",
+            "icon": "faBrain",
+            "status": "Currently Studying",
+            "statusColor": "green"
+        }
     ]
 }

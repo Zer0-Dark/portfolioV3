@@ -12,8 +12,8 @@ import PageTitle from "../components/PageTitle";
 import Footer from "../components/Footer";
 function Contact({ killedTheCat }) {
     return (
-        <>
-            <div className=" bg-mainBgColor min-h-screen min-w-screen p-6 relative">
+        <div className="bg-mainBgColor min-h-screen min-w-screen flex flex-col">
+            <div className="flex-grow pt-6 relative">
                 <GoBackButton />
                 <PageTitle title="Contact" />
                 <div className="w-full desktop:mt-[5%] mt-[15%] flex items-center justify-center gap-[12%] desktop:text-4xl text-xl text-thirdBgColor font-bold">
@@ -38,8 +38,10 @@ function Contact({ killedTheCat }) {
 
                 {/* <WalkingFooterCat /> */}
             </div>
+            <Footer />
             <MotionCat killedTheCat={killedTheCat} />
-        </>
+        </div>
+
     )
 }
 
