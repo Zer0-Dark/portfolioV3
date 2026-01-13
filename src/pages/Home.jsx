@@ -42,7 +42,12 @@ function Home({ killedTheCat, killTheCatFun }) {
         , [])
 
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 20 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+        >
             <AnimatePresence mode="sync">
                 {
                     showGame && <Game endGame={endGame} killedTheCat={killTheCatFun} />
@@ -54,7 +59,7 @@ function Home({ killedTheCat, killTheCatFun }) {
                 {colums}
 
             </motion.div>
-            <motion.div initial={{ opacity: 0, scale: 0.6 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'keyframes', duration: 0.5 }} className="  w-lvw h-lvh max-w-lvw max-h-lvh flex flex-col">
+            <motion.div initial={{ opacity: 0, scale: 1 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'keyframes', duration: 0.5 }} className="  w-lvw h-lvh max-w-lvw max-h-lvh flex flex-col">
 
                 {/* tITLE START */}
                 <div className=" w-full flex flex-col desktop:pt-14 pt-24 justify-center items-center cursor-cool ">
@@ -134,7 +139,7 @@ function Home({ killedTheCat, killTheCatFun }) {
                     <Footer></Footer>
                 </div>
             </motion.div>
-        </>
+        </motion.div>
     )
 }
 

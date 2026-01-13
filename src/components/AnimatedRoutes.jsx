@@ -12,7 +12,7 @@ function AnimatedRoutes() {
         setKilledTheCat(true);
     }
     return (
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home killedTheCat={killedTheCat} killTheCatFun={killTheCat} />} />
                 <Route path="/projects" element={<Projects killedTheCat={killedTheCat} />} />

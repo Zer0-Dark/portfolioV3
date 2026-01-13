@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { motion } from "framer-motion";
 import GoBackButton from "../components/GoBackButton"
 import MotionCat from "../components/MotionCat";
 import PageTitle from "../components/PageTitle";
@@ -25,114 +26,129 @@ function Exp({ killedTheCat }) {
     const { profile, about, experiences, techStack, books } = profileData;
 
     return (
-        <div className="min-w-screen min-h-screen bg-mainBgColor pt-5">
-            <GoBackButton />
-
-            {/* Page Title with ID Badge */}
-            <div className="text-center mb-16 relative">
-                <PageTitle title="MY BIO" />
-                <div className="flex items-center justify-center gap-4 mt-4">
-                    <a
-                        href="https://github.com/Zer0-Dark"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 bg-white/5 px-4 py-1 rounded-full border border-white/10 hover:bg-white/10 hover:border-secondryTextColor/50 transition-all duration-300"
-                    >
-                        <span className="font-game text-xs text-gray-400 tracking-widest hover:text-secondryTextColor transition-colors">ID: ZER0-DARK</span>
-                    </a>
-                    <a
-                        href="/src/assets/Abdulrahman-ehab-12-2025.pdf"
-                        download
-                        className="inline-flex items-center gap-2 bg-white/5 px-4 py-1 rounded-full border border-white/10 hover:bg-white/10 hover:border-green-500/50 transition-all duration-300"
-                    >
-                        <span className="text-green-500 text-xs">📄</span>
-                        <span className="font-game text-xs text-gray-400 tracking-widest hover:text-green-500 transition-colors">DOWNLOAD CV</span>
-                    </a>
-                </div>
+        <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 20 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="min-w-screen min-h-screen bg-mainBgColor pt-5 relative"
+        >
+            {/* Background Effects */}
+            <div className="fixed inset-0 pointer-events-none z-0">
+                <div className="absolute top-[10%] left-[20%] w-[500px] h-[500px] bg-secondryTextColor opacity-[0.08] rounded-full blur-[100px]"></div>
+                <div className="absolute bottom-[10%] right-[10%] w-[400px] h-[400px] bg-blue-600 opacity-[0.08] rounded-full blur-[100px]"></div>
+                <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'linear-gradient(#888 1px, transparent 1px), linear-gradient(90deg, #888 1px, transparent 1px)', backgroundSize: '50px 50px' }}></div>
             </div>
 
-            {/* Profile Section */}
-            <section className="flex flex-col desktop:flex-row gap-8 mb-20 items-stretch max-w-6xl mx-auto">
-                <ProfileCard
-                    image={profile.image}
-                    level={profile.level}
-                    title={profile.title}
-                    location={profile.location}
-                />
-                <AboutSection
-                    description={about.description}
-                    additionalInfo={about.additionalInfo}
-                />
-            </section>
+            <div className="px-5 relative z-10">
+                <GoBackButton />
 
-            {/* Professional Experience Section */}
-            <section className="mb-20 max-w-6xl mx-auto">
-                <SectionHeader
-                    title="Professional"
-                    highlight="Experience"
-                    badge="CAREER_LOG"
-                />
-                <div className="grid grid-cols-1 gap-5">
-                    {experiences.map((exp) => (
-                        <ExperienceCard
-                            key={exp.id}
-                            title={exp.title}
-                            company={exp.company}
-                            description={exp.description}
-                            status={exp.status}
-                            statusColor={exp.statusColor}
-                            stack={exp.stack}
-                            iconColor={exp.iconColor}
-                        />
-                    ))}
+                {/* Page Title with ID Badge */}
+                <div className="text-center mb-16 relative">
+                    <PageTitle title="MY BIO" />
+                    <div className="flex items-center justify-center gap-4 mt-4">
+                        <a
+                            href="https://github.com/Zer0-Dark"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 bg-white/5 px-4 py-1 rounded-full border border-white/10 hover:bg-white/10 hover:border-secondryTextColor/50 transition-all duration-300"
+                        >
+                            <span className="font-game text-xs text-gray-400 tracking-widest hover:text-secondryTextColor transition-colors">ID: ZER0-DARK</span>
+                        </a>
+                        <a
+                            href="/src/assets/Abdulrahman-ehab-12-2025.pdf"
+                            download
+                            className="inline-flex items-center gap-2 bg-white/5 px-4 py-1 rounded-full border border-white/10 hover:bg-white/10 hover:border-green-500/50 transition-all duration-300"
+                        >
+                            <span className="text-green-500 text-xs">📄</span>
+                            <span className="font-game text-xs text-gray-400 tracking-widest hover:text-green-500 transition-colors">DOWNLOAD CV</span>
+                        </a>
+                    </div>
                 </div>
-            </section>
 
-            {/* Core Tech Stack Section */}
-            <section className="flex-grow pb-12 max-w-6xl mx-auto">
-                <SectionHeader
-                    title="Core Tech"
-                    highlight="Stack"
-                    badge="INVENTORY"
-                />
-                <div className="grid grid-cols-1 desktop:grid-cols-2 gap-5">
-                    {techStack.map((tech) => (
-                        <TechStackCard
-                            key={tech.id}
-                            name={tech.name}
-                            category={tech.category}
-                            description={tech.description}
-                            icon={iconMap[tech.icon]}
-                            tags={tech.tags}
-                        />
-                    ))}
-                </div>
-            </section>
+                {/* Profile Section */}
+                <section className="flex flex-col desktop:flex-row gap-8 mb-20 items-stretch max-w-6xl mx-auto">
+                    <ProfileCard
+                        image={profile.image}
+                        level={profile.level}
+                        title={profile.title}
+                        location={profile.location}
+                    />
+                    <AboutSection
+                        description={about.description}
+                        additionalInfo={about.additionalInfo}
+                    />
+                </section>
 
-            {/* Knowledge Base Section */}
-            <section className="pb-20 max-w-6xl mx-auto">
-                <SectionHeader
-                    title="Knowledge"
-                    highlight="Base (Books)"
-                    badge="LIBRARY"
-                />
-                <div className="grid grid-cols-1 desktop:grid-cols-3 gap-8">
-                    {books.map((book) => (
-                        <BookCard
-                            key={book.id}
-                            title={book.title}
-                            author={book.author}
-                            icon={book.icon}
-                            status={book.status}
-                            statusColor={book.statusColor}
-                        />
-                    ))}
-                </div>
-            </section>
+                {/* Professional Experience Section */}
+                <section className="mb-20 max-w-6xl mx-auto">
+                    <SectionHeader
+                        title="Professional"
+                        highlight="Experience"
+                        badge="CAREER_LOG"
+                    />
+                    <div className="grid grid-cols-1 gap-5">
+                        {experiences.map((exp) => (
+                            <ExperienceCard
+                                key={exp.id}
+                                title={exp.title}
+                                company={exp.company}
+                                description={exp.description}
+                                status={exp.status}
+                                statusColor={exp.statusColor}
+                                stack={exp.stack}
+                                iconColor={exp.iconColor}
+                            />
+                        ))}
+                    </div>
+                </section>
 
-            <MotionCat killedTheCat={killedTheCat} />
+                {/* Core Tech Stack Section */}
+                <section className="flex-grow pb-12 max-w-6xl mx-auto">
+                    <SectionHeader
+                        title="Core Tech"
+                        highlight="Stack"
+                        badge="INVENTORY"
+                    />
+                    <div className="grid grid-cols-1 desktop:grid-cols-2 gap-5">
+                        {techStack.map((tech) => (
+                            <TechStackCard
+                                key={tech.id}
+                                name={tech.name}
+                                category={tech.category}
+                                description={tech.description}
+                                icon={iconMap[tech.icon]}
+                                tags={tech.tags}
+                            />
+                        ))}
+                    </div>
+                </section>
+
+                {/* Knowledge Base Section */}
+                <section className="pb-20 max-w-6xl mx-auto">
+                    <SectionHeader
+                        title="Knowledge"
+                        highlight="Base (Books)"
+                        badge="LIBRARY"
+                    />
+                    <div className="grid grid-cols-1 desktop:grid-cols-3 gap-8">
+                        {books.map((book) => (
+                            <BookCard
+                                key={book.id}
+                                title={book.title}
+                                author={book.author}
+                                icon={book.icon}
+                                status={book.status}
+                                statusColor={book.statusColor}
+                            />
+                        ))}
+                    </div>
+                </section>
+            </div>
+
             <Footer />
-        </div>
+            <MotionCat killedTheCat={killedTheCat} />
+        </motion.div>
     )
 }
 
