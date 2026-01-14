@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faFile, faEnvelope, faArrowRight, faCopy } from "@fortawesome/free-solid-svg-icons";
 import pdf from "../assets/Abdulrahman-ehab-12-2025.pdf";
 import { motion } from "framer-motion";
@@ -35,6 +35,11 @@ function Contact({ killedTheCat }) {
             title: "CV / Resume",
             url: pdf,
             download: true
+        },
+        {
+            icon: faXTwitter,
+            title: "X (Twitter)",
+            url: "https://x.com/Zer00dark"
         }
     ];
 
@@ -71,7 +76,7 @@ function Contact({ killedTheCat }) {
                 </div>
 
                 {/* Contact Cards */}
-                <div className="grid grid-cols-1 desktop:grid-cols-3 gap-6 w-full max-w-5xl mb-12">
+                <div className="grid grid-cols-1 desktop:grid-cols-2 gap-6 w-full max-w-5xl mb-12">
                     {contactLinks.map((link, index) => (
                         <a
                             key={index}
