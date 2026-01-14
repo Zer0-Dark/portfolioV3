@@ -71,34 +71,29 @@ function Home({ killedTheCat, killTheCatFun }) {
                 {/* TITLE END */}
 
                 {/* MENU START */}
-                <div className="flex mt-20 pl-[8%] pr-[3%] desktop:pt-0 pt-12  ">
+                <div className="flex mt-12 pl-[5%] pr-[5%] desktop:pl-[8%] desktop:pr-[3%] desktop:pt-0 pt-8 w-full justify-center desktop:justify-start">
 
-                    <div className="flex flex-col   desktop:justify-normal desktop:items-start justify-center items-center text-mainTextColor bigDesktop:text-6xl desktop:text-5xl text-5xl desktop:w-1/2 w-full translate-x-0  mb-8 bigDesktop:gap-6 gap-6 desktop:gap-2 bigDesktop:ml-6 font-medium   ">
-                        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor desktop:block hidden hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md">
+                    <div className="flex flex-col desktop:justify-normal desktop:items-start justify-center items-center text-mainTextColor bigDesktop:text-6xl desktop:text-5xl text-4xl desktop:w-1/2 w-full translate-x-0 mb-8 bigDesktop:gap-6 gap-4 desktop:gap-2 bigDesktop:ml-6 font-medium">
 
-                            <button className="  cursor-pointer" onClick={() => setShowGame(true)} >Start Game</button>
+                        {/* Mobile Game Notification */}
+                        <div className="desktop:hidden text-gray-400 text-[10px] mb-4 text-center font-game border border-white/10 p-2 rounded bg-white/5 backdrop-blur-sm">
+                            <span className="text-secondryTextColor animate-pulse">⚠ SYSTEM NOTICE</span>
+                            <br />FULL GAME EXPERIENCE AVAILABLE<br />ON DESKTOP VIEW
+                        </div>
 
+                        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor desktop:block hidden hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left rounded-md">
+                            <button className="cursor-pointer " onClick={() => setShowGame(true)}>Start Game</button>
                         </motion.div>
 
-                        {/* <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md " >
-
-                            <Link to="/contact" className=" cursor-pointer">Who Am I ?</Link>
-                        </motion.div> */}
-
-                        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md " >
-
-                            <Link to="/Expertise" className=" cursor-pointer">My Bio</Link>
+                        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left rounded-md">
+                            <Link to="/Expertise" className="cursor-pointer">My Bio</Link>
                         </motion.div>
-                        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md ">
-
-                            <Link to="/projects" className="  cursor-pointer ">Projects</Link>
+                        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left rounded-md">
+                            <Link to="/projects" className="cursor-pointer">Projects</Link>
                         </motion.div>
-                        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left  rounded-md " >
-
-                            <Link to="/contact" className=" cursor-pointer">Contact</Link>
+                        <motion.div initial={{ scale: 1, y: 0 }} whileHover={{ scale: 1.05, y: -5 }} className="hover:bg-thirdBgColor hover:text-secondryBgColor text-mainTextColor desktop:p-4 p-2 desktop:pl-16 transition duration-300 desktop:w-3/4 w-full text-center desktop:text-left rounded-md">
+                            <Link to="/contact" className="cursor-pointer">Contact</Link>
                         </motion.div>
-
-
                     </div>
                     {/* MENU END */}
 
