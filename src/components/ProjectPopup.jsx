@@ -27,7 +27,7 @@ const ProjectPopup = ({ isOpen, onClose, title, projectTitle, paragraph, vid, te
     return (
         <AnimatePresence>
             {isOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 backdrop-blur-sm bg-black/80 overflow-y-auto">
+                <div className="fixed inset-0 z-50 flex items-start desktop:items-center justify-center p-4 sm:p-6 backdrop-blur-sm bg-black/80 overflow-y-auto">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
