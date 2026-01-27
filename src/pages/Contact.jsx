@@ -35,13 +35,14 @@ function Contact({ killedTheCat }) {
             title: "CV / Resume",
             url: pdf,
             download: true
-        },
-        {
-            icon: faXTwitter,
-            title: "X (Twitter)",
-            url: "https://x.com/Zer00dark"
         }
     ];
+    // ,
+    //         {
+    //             icon: faXTwitter,
+    //             title: "X (Twitter)",
+    //             url: "https://x.com/Zer00dark"
+    //         }
 
     return (
         <motion.div
